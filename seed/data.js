@@ -1,5 +1,5 @@
 import db from '../db/connection.js'
-import Product from '../models/product.js'
+import Book from '../models/book.js'
 import User from '../models/user.js'
 import bcrypt from 'bcrypt'
 
@@ -26,7 +26,7 @@ const insertData = async () => {
   ]
 
 
-  await Product.insertMany(books)
+  await Book.insertMany(books)
   console.log('Created users & books!')
 
   db.close()
