@@ -5,7 +5,7 @@ import User from '../models/user.js'
 
 // for development purposes
 let SALT_ROUNDS = 11
-let TOKEN_KEY = 'areallylonggoodkey'
+let TOKEN_KEY = 'muchbetterkey'
 
 // for production
 if (process.env.NODE_ENV === 'production') {
@@ -83,4 +83,4 @@ export const verify = async (req, res) => {
   }
 }
 
-export const changePassword = async (req, res) => {}
+// export const changePassword = async (req, res) => {}
