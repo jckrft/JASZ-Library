@@ -56,6 +56,24 @@ const User = new Schema(
 
 Link to [Team Expectations Document](https://docs.google.com/document/d/1WMG7CX3tmeAdju4malt2lE7Vz8K2oUcaGM85A9WGWhY/edit)
 
+### Project Schedule
+
+Day | Goal 
+--- | --- 
+11/10 | Create repo, brainstorm idea & get approval
+11/11 | Off day
+11/12 | AM: Finish readme, component hierarchy, figma PM: Start building back-end
+11/13 | Off day
+11/14 | Finish working on back-end
+11/15 | AM: Have back-end finished and deployed, discuss delegating tasks PM: Begin working on individual components
+11/16 | Work on individual front-end components
+11/17 | Work on individual front-end components and styling
+11/18 | Work on individual front-end components and styling
+11/19 | Deploy front-end and have all major aspects of project completed
+11/20 | Work on post-MVP and styling
+11/21 | Work on post-MVP and styling
+11/22 | Present project
+
 ## MVP
 
 - Home page displaying some of the books in the library
@@ -66,7 +84,7 @@ Link to [Team Expectations Document](https://docs.google.com/document/d/1WMG7CX3
 - Add a book page to add a book to the library
 - Edit a book  page to update info for a book in the library
 - Delete a book button to delete a book from the library
-- Sort books by alphabetically by title, author (pst-MVP)
+- Sort books by alphabetically by title, author (post-MVP)
 - Carousel of favorite books of class (post-MVP)
 - Personalized book list per user (post-MVP)
 - Recommended other books based on genre (post-MVP)
