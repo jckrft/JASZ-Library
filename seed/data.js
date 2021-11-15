@@ -4,7 +4,6 @@ import User from '../models/user.js'
 import bcrypt from 'bcrypt'
 
 const insertData = async () => {
-  // reset database
   await db.dropDatabase()
 
   const user1 = new User({
