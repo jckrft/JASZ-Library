@@ -1,5 +1,5 @@
 {
-  "name": "JASZ-Library",
+  "name": "jasz-library",
   "version": "1.0.0",
   "description": "## Overview The JASZ Library is an interactive collection of books that allows anyone to browse the collection. A user can also sign up for an account and log in to add, edit, or delete a book in the collection.",
   "main": "index.js",
@@ -26,10 +26,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "jwt-decode": "^3.1.2",
     "mongoose": "^6.0.12",
-    "morgan": "^1.10.0",
-    "react-router-dom": "^6.0.2"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
