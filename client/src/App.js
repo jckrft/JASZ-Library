@@ -26,34 +26,15 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path='/'>
-          <Home user={user} />
-        </Route>
-        <Route path="/sign-up">
-          <SignUp setUser={setUser} />
-        </Route>
-        <Route path="/sign-in">
-          <SignIn setUser={setUser} />
-        </Route>
-        <Route path="/sign-out">
-          <SignOut setUser={setUser} />
-        </Route>
-        <Route exact path="/books">
-          <Books user={user} />
-        </Route>
-        <Route path="/add-book">
-          {user ? <BookCreate user={user} /> : <Navigate to="/sign-up" />}
-          
-        </Route>
-        <Route exact path="/books/:id/edit">
-          {user ? <BookEdit user={user} /> : <Navigate to='/' />}
-        </Route>
-        <Route exact path="/books/:id">
-          <BookDetail user={user} />
-        </Route>
+        <Route exact path='/' element={<Home user={user} />} />
+        <Route path="/sign-up" element={<SignUp setUser={setUser} />} />
+        <Route path="/sign-in" element={<SignIn setUser={setUser} />} /> 
+        <Route path="/sign-out" element={<SignOut setUser={setUser} />} />   
+        <Route exact path="/books" element={<Books user={user} />} /> 
+        <Route path="/add-book" element={user ? <BookCreate user={user} /> : <Navigate to="/sign-up" />} /> 
+        <Route exact path="/books/:id/edit" element={user ? <BookEdit user={user} /> : <Navigate to='/' />} />
+        <Route exact path="/books/:id" element={<BookDetail user={user} />} />   
       </Routes>
-
-
     </div>
   );
 }
