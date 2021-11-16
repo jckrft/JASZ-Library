@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout/Layout';
-import BookCard from '../../components/BookCard/BookCard';
+import BookCards from '../../components/BookCards/BookCards';
 
 const Home = (props) => {
 	
@@ -7,7 +7,7 @@ const Home = (props) => {
 		<Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
 			<div className="home-page">
 				<h1>Welcome to the Library</h1>
-				<BookCard />
+				<BookCards />
 			</div>
 		</Layout>
 	)
