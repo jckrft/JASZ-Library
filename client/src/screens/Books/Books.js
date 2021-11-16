@@ -1,28 +1,58 @@
 import Book from '../../components/Book/Book';
 import Layout from '../../components/Layout/Layout';
-import './Books.css'
+import Sort from '../../components/Sort/Sort';
+import { AZ, ZA } from '../../utils/sort';
+import './Books.css';
 
 import { useEffect, useState } from 'react';
 import { getBooks } from '../../services/books';
 
 const Books = (props) => {
   const [books, setBooks] = useState(null)
+  const [searchResult, setSearchResult] = useState([])
+  const [applySort, setApplySort] = useState(false)
+  const [sortType, setSortType] = useState('name-ascending')
  
   useEffect(() => {
     const fetchBooks = async () => {
       const allBooks = await getBooks()
       setBooks(allBooks)
+      setSearchResult(allBooks)
     }
     fetchBooks()
   }, [])
 
+  const handleSort = (type) => {
+    if (type !== '' && type !== undefined) {
+      setSortType(type)
+    }
+    switch (type) {
+      case 'name-ascending':
+        setSearchResult(AZ(searchResult))
+        break
+      case 'name-descending':
+        setSearchResult(ZA(searchResult))
+        break
+      default:
+        break
+    }
+  }
+
+  if (applySort) {
+    handleSort(sortType)
+    setApplySort(false)
+  }
+
   if (!books) return <h1>loading...</h1>
+
+  const handleSubmit = (ev) => ev.preventDefault()
 
   return (
     <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
-       <h1 className='books-header'>Books</h1>
+      <h1 className='books-header'>Books</h1>
+      <Sort onSubmit={handleSubmit} handleSort={handleSort}/>
       <div className='books'>
-        {books.map((book, index) => {
+        {searchResult.map((book, index) => {
           return (
             <Book
               _id={book._id}
