@@ -1,1 +1,80 @@
-/* comment */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=IM+Fell+English&display=swap');
+
+nav {
+    flex: 1;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    padding: 20px 0;
+    background-color: black;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'IM Fell English', serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: -3px;
+    flex: 1;
+    max-width: 30vw;
+    transition: 250ms all;
+}
+
+.logo:hover {
+    transform: scale(1.004);
+}
+
+.links {
+    font-family: 'IM Fell English', serif;
+    display: flex;
+    flex: 2;
+    max-width: 30vw;
+    align-items: end;
+    font-size: 24px;
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    /* white-space: nowrap;
+    overflow: hidden; */
+}
+
+.link {
+  flex: 1;
+  color: whitesmoke;
+}
+
+.link-welcome{
+  font-family: 'IM Fell English', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 500px) {
+    nav {
+        width: 98%;
+    }
+    .logo {
+        max-width: 50%;
+    }
+    .links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 50vw;
+    }
+    .link {
+        padding: 3px;
+    }
+}
