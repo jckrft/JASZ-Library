@@ -6,7 +6,7 @@ import './SignUp.css'
 
 
 
-const SignUp = () => {
+const SignUp = (props) => {
   const navigate = useNavigate()
   
   const [form, setForm] = useState({

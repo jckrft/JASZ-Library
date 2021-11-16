@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './BookEdit.css'
-import { useParams, Redirect } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getBook, updateBook } from '../../services/books'
 
