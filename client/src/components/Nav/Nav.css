@@ -33,22 +33,32 @@ nav {
 }
 
 .links {
-    font-family: 'IM Fell English', serif;
     display: flex;
-    flex: 2;
-    max-width: 30vw;
-    align-items: end;
+    font-family: 'IM Fell English', serif;
     font-size: 24px;
+    max-width: 30vw;
+    justify-content: flex-end;
+    align-items: end;
     position: absolute;
     top: 0%;
-    right: 5%;
-    /* white-space: nowrap;
-    overflow: hidden; */
+    right: 8%;
 }
 
 .link {
-  flex: 1;
   color: #E3DFDF;
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.link-welcome{
+  font-size: large;
+  border-color: white;
+  color: #E3DFDF;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: tomato;
 }
 
 a {
