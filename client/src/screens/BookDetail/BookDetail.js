@@ -2,7 +2,7 @@ import "./BookDetail.css";
 import { useEffect, useState } from "react";
 import { getBook, deleteBook } from "../../services/books.js";
 import  Layout  from "../../components/Layout/Layout.js";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, Navigate } from "react-router-dom";
 
 const BookDetail = (props) => {
   const [book, setBook] = useState(null);
@@ -22,6 +22,11 @@ const BookDetail = (props) => {
     return <h1>Loading...</h1>;
   }
 
+  const redirectToSignUp = () => {
+    console.log('test')
+    return <Navigate to={`/sign-up`} />
+  }
+
   return (
     <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : "Guest"}>
       <div className="book-detail">
@@ -37,8 +42,8 @@ const BookDetail = (props) => {
             </Link>
             <button
               className="delete-button"
-              onClick={() => deleteBook(book._id)}
-            ></button>
+              onClick={ props.user ? () => deleteBook(book._id) : () => redirectToSignUp() }
+            >Delete</button>
           </div>
         </div>
       </div>
