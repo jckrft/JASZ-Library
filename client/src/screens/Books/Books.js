@@ -1,4 +1,3 @@
-// import './screens/Books/Books.css';
 import Book from '../../components/Book/Book';
 import Layout from '../../components/Layout/Layout';
 import './Books.css'

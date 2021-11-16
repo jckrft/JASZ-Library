@@ -35,7 +35,7 @@ const BookCreate = (props) => {
 
 
 	return (
-		<Layout user={props.user}>
+		<Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : "Guest"}>
 			<form className="book-create" onSubmit={handleSubmit}>
 				<label htmlFor="title">Title</label>
 				<input
