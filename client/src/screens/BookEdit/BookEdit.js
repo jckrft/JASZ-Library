@@ -25,10 +25,10 @@ const BookEdit = (props) => {
   }, [id])
 
   const handleChange = (event) => {
-    const { title, value } = event.target
+    const { name, value } = event.target
     setBook({
       ...book,
-      [title]: value,
+      [name]: value,
     })
   }
 

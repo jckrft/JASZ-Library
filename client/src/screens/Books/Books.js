@@ -1,4 +1,3 @@
-// import './screens/Books/Books.css';
 import Book from '../../components/Book/Book';
 import Layout from '../../components/Layout/Layout';
 import './Books.css'
@@ -20,7 +19,7 @@ const Books = (props) => {
   if (!books) return <h1>loading...</h1>
 
   return (
-    <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : "Guest"}>
+    <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
        <h1 className='books-header'>Books</h1>
       <div className='books'>
         {books.map((book, index) => {
