@@ -17,7 +17,7 @@ const unauthenticatedOptions = (
 )
 
 const Nav = (props) => {
-  
+
         return (
             <nav>
                 <div className="nav">
