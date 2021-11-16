@@ -31,6 +31,7 @@ const SignUp = (props) => {
     try {
       const user = await signUp(form)
       setUser(user)
+      //console.log(user)
       navigate('/')
     } catch (error) {
       console.error(error)
@@ -54,7 +55,7 @@ const SignUp = (props) => {
         </button>
       )
     } else {
-      return <button tpye='submit'>Sign Up</button>
+      return <button type='submit'>Sign Up</button>
     }
   }
 
@@ -104,6 +105,7 @@ const SignUp = (props) => {
           placeholder='Confirm Password'
           onChange={handleChange}
         />
+        {renderError()}
       </form>
     </div>
 	)
