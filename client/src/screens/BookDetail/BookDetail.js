@@ -23,12 +23,13 @@ const BookDetail = (props) => {
   }
 
   const redirectToSignUp = () => {
-    console.log('test')
-    return <Navigate to={`/sign-up`} />
+    if(!props.user){
+      return <Navigate to={`/sign-up`} />
+    }
   }
 
   return (
-    <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : "Guest"}>
+    <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
       <div className="book-detail">
         <img className="book-detail-img" src={book.imgURL} alt={book.title} />
         <div className="detail">
@@ -42,7 +43,7 @@ const BookDetail = (props) => {
             </Link>
             <button
               className="delete-button"
-              onClick={ props.user ? () => deleteBook(book._id) : () => redirectToSignUp() }
+              onClick={ props.user ? () => deleteBook(book._id) : () => redirectToSignUp }
             >Delete</button>
           </div>
         </div>
