@@ -23,7 +23,7 @@ const BookDetail = (props) => {
   }
 
   return (
-    <Layout user={props.user.username}>
+    <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : "Guest"}>
       <div className="book-detail">
         <img className="book-detail-img" src={book.imgURL} alt={book.title} />
         <div className="detail">
