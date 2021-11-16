@@ -53,25 +53,27 @@ const SignIn = (props) => {
 	}
 
 	return (
-		<form className="sign-in-form" onSubmit={onSignIn}>
-			<label htmlFor="email">Email</label>
-			<input
-				className="input-email"
-				placeholder="Email Address"
-				value={email}
-				required
-				onChange={handleChange}
-			/>
-			<label htmlFor="password">Password</label>
-			<input
-				className="input-password"
-				placeholder="Password"
-				value={password}
-				required
-				onChange={handleChange}
-			/>
-			{renderError()}
-		</form>
+		<div>
+			<form className="sign-in-form" onSubmit={onSignIn}>
+				<label htmlFor="email">Email</label>
+				<input
+					className="input-email"
+					placeholder="Email Address"
+					value={email}
+					required
+					onChange={handleChange}
+				/>
+				<label htmlFor="password">Password</label>
+				<input
+					className="input-password"
+					placeholder="Password"
+					value={password}
+					required
+					onChange={handleChange}
+				/>
+				{renderError()}
+			</form>
+		</div>
 	)
 }
 
