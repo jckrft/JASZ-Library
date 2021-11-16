@@ -31,7 +31,7 @@ const SignUp = (props) => {
     try {
       const user = await signUp(form)
       setUser(user)
-      navigate.push('/')
+      navigate('/')
     } catch (error) {
       console.error(error)
       setForm({
