@@ -1,9 +1,17 @@
 import './Footer.css'
+import { ExternalLink } from 'react-external-link'
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () =>
   <footer>
-    this is the footer
-
+    <ExternalLink className='external-link' href='https://github.com/jckrft'><GitHubIcon />
+    </ExternalLink>
+    <ExternalLink className='external-link' href='https://github.com/alexnwarton'><GitHubIcon />
+    </ExternalLink>
+    <ExternalLink className='external-link' href='https://github.com/sidneypaucar'><GitHubIcon />
+    </ExternalLink>
+    <ExternalLink className='external-link' href='https://github.com/zachpartin'><GitHubIcon />
+    </ExternalLink>
   </footer>
   
 

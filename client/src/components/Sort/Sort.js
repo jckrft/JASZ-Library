@@ -12,13 +12,13 @@ const Sort = (props) => {
       <select className='sort' onChange={handleSort}>
         <option
           className='option'
-          value='name-ascending'>
-          &nbsp; Alphabetically, A-Z &nbsp;
+          value='title-ascending'>
+          &nbsp; Title, A-Z &nbsp;
         </option>
         <option
           className='option'
-          value='name-descending'>
-          &nbsp; Alphabetically, Z-A &nbsp;
+          value='title-descending'>
+          &nbsp; Title, Z-A &nbsp;
         </option>
       </select>
     </form>
