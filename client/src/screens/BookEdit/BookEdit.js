@@ -43,7 +43,7 @@ const BookEdit = (props) => {
   }
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className='book-edit'>
         <div className='image-container'>
           <img
