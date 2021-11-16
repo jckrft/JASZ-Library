@@ -69,6 +69,7 @@ const SignIn = (props) => {
 				<input
 					className="input-password"
 					placeholder="Password"
+					type="password"
 					value={password}
 					name="password"
 					required
