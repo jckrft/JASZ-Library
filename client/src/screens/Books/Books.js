@@ -5,9 +5,9 @@ import Layout from '../../components/Layout/Layout';
 import { useEffect, useState } from 'react';
 import { getBooks } from '../../services/books';
 
-const Books = () => {
+const Books = (props) => {
   const [books, setBooks] = useState(null)
-
+ 
   useEffect(() => {
     const fetchBooks = async () => {
       const allBooks = await getBooks()
@@ -19,7 +19,7 @@ const Books = () => {
   if (!books) return <h1>loading...</h1>
 
   return (
-    <Layout>
+    <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : "Guest"}>
       <div className='books'>
         {books.map((book, index) => {
           return (

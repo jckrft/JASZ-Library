@@ -1,10 +1,13 @@
 import Layout from '../../components/Layout/Layout';
+import BookCard from '../../components/BookCard/BookCard';
 
 const Home = (props) => {
+	
 	return (
-		<Layout user={props.user}>
+		<Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : "Guest"}>
 			<div className="home-page">
-				<h1>Test Home Page</h1>
+				<h1>Welcome to the Library</h1>
+				<BookCard />
 			</div>
 		</Layout>
 	)

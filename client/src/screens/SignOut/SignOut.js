@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { signOut } from '../../services/users';
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const SignOut = (props) => {
   const { setUser } = props
