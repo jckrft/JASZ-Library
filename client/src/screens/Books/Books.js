@@ -1,6 +1,7 @@
 // import './screens/Books/Books.css';
 import Book from '../../components/Book/Book';
 import Layout from '../../components/Layout/Layout';
+import './Books.css'
 
 import { useEffect, useState } from 'react';
 import { getBooks } from '../../services/books';
@@ -20,6 +21,7 @@ const Books = () => {
 
   return (
     <Layout>
+      <h1 className='books-header'>Books</h1>
       <div className='books'>
         {books.map((book, index) => {
           return (
