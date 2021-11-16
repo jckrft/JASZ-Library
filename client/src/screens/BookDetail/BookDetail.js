@@ -1,10 +1,10 @@
 import "./BookDetail.css";
 import { useEffect, useState } from "react";
 import { getBook, deleteBook } from "../../services/books.js";
-import { Layout } from "../../components";
+import  Layout  from "../../components/Layout/Layout.js";
 import { Link, useParams } from "react-router-dom";
 
-const BookDetail = () => {
+const BookDetail = (props) => {
   const [book, setBook] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
