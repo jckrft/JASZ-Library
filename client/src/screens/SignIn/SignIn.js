@@ -4,7 +4,7 @@ import { signIn } from '../../services/users';
 import './SignIn.css';
 
 const SignIn = (props) => {
-	const history = useNavigate();
+	const navigate = useNavigate();
 
 	const [signInForm, setSignInForm] = useState({
 		email:'',
@@ -28,7 +28,7 @@ const SignIn = (props) => {
 		try {
 			const user = await signIn(signInForm);
 			setUser(user);
-			history.push('/')
+			navigate('/');
 		} catch (error) {
 			console.error(error);
 			setSignInForm({
@@ -59,7 +59,8 @@ const SignIn = (props) => {
 				<input
 					className="input-email"
 					placeholder="Email Address"
-					value={email}
+					value={props.email}
+					name="email"
 					required
 					onChange={handleChange}
 				/>
@@ -67,7 +68,8 @@ const SignIn = (props) => {
 				<input
 					className="input-password"
 					placeholder="Password"
-					value={password}
+					value={props.password_digest}
+					name="password"
 					required
 					onChange={handleChange}
 				/>
