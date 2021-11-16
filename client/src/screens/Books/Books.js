@@ -1,6 +1,7 @@
 // import './screens/Books/Books.css';
 import Book from '../../components/Book/Book';
 import Layout from '../../components/Layout/Layout';
+import './Books.css'
 
 import { useEffect, useState } from 'react';
 import { getBooks } from '../../services/books';
@@ -20,6 +21,7 @@ const Books = (props) => {
 
   return (
     <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : "Guest"}>
+       <h1 className='books-header'>Books</h1>
       <div className='books'>
         {books.map((book, index) => {
           return (
