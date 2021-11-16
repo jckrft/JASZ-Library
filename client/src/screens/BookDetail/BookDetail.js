@@ -1,8 +1,3 @@
-import "./BookDetail.css";
-import { useEffect, useState } from "react";
-import { getBook, deleteBook } from "../../services/books.js";
-import Layout from "../../components/Layout/Layout";
-import { Link, useParams } from "react-router-dom";
 
 const BookDetail = (props) => {
   const [book, setBook] = useState(null);
