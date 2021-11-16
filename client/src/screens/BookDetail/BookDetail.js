@@ -23,7 +23,7 @@ const BookDetail = (props) => {
   }
 
   return (
-    <Layout user={props.user}>
+    <Layout user={props.user.username}>
       <div className="book-detail">
         <img className="book-detail-img" src={book.imgURL} alt={book.title} />
         <div className="detail">
@@ -32,7 +32,7 @@ const BookDetail = (props) => {
           <div className="genre">{book.genre}</div>
           <div className="description">{book.description}</div>
           <div className="button-container">
-            <Link to={`books/${book._id}/edit`} className="edit-button">
+            <Link to={`/books/${book._id}/edit`} className="edit-button">
               Edit
             </Link>
             <button

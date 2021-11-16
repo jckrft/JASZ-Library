@@ -30,7 +30,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp setUser={setUser} />} />
         <Route path="/sign-in" element={<SignIn setUser={setUser} />} /> 
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />   
-        <Route exact path="/books" element={<Books user={user} />} /> 
+        <Route exact path="/books" element={<Books user={user}/>} /> 
         <Route path="/add-book" element={user ? <BookCreate user={user} /> : <Navigate to="/sign-up" />} /> 
         <Route exact path="/books/:id/edit" element={user ? <BookEdit user={user} /> : <Navigate to='/' />} />
         <Route exact path="/books/:id" element={<BookDetail user={user} />} />   
