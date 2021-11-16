@@ -39,7 +39,7 @@ const BookEdit = (props) => {
   }
 
   if (isUpdated) {
-    return <Redirect to={`/books/${id}`} />
+    return <Navigate to={`/books/${id}`} />
   }
 
   return (
