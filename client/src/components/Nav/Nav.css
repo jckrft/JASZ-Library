@@ -48,11 +48,7 @@ nav {
 
 .link {
   flex: 1;
-  color: whitesmoke;
-}
-
-.link-welcome{
-  font-family: 'IM Fell English', serif;
+  color: #E3DFDF;
 }
 
 a {

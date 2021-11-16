@@ -1,1 +1,11 @@
-/* comment */
+footer {
+  background-color: black;
+  color: #E3DFDF;
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100vw;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
