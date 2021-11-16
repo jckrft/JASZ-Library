@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { getBook, deleteBook } from "../../services/books.js";
 import  Layout  from "../../components/Layout/Layout.js";
 import { Link, useParams, Navigate } from "react-router-dom";
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const BookDetail = (props) => {
   const [book, setBook] = useState(null);
@@ -42,13 +44,17 @@ const BookDetail = (props) => {
           <div className="genre">{book.genre}</div>
           <div className="description">{book.description}</div>
           <div className="button-container">
+            
             <Link to={`/books/${book._id}/edit`} className="edit-button">
-              Edit
+              <EditIcon/>
             </Link>
+            
             <button
               className="delete-button"
               onClick={ props.user ? () => {deleteBook(book._id) && setIsDeleted(true)} : () => setIsUser(true) }
-            >Delete</button>
+            ><DeleteIcon />
+            </button>
+          
           </div>
         </div>
       </div>
