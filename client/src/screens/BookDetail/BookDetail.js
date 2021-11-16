@@ -7,6 +7,8 @@ import { Link, useParams, Navigate } from "react-router-dom";
 const BookDetail = (props) => {
   const [book, setBook] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
+  const [isDeleted, setIsDeleted] = useState(false);
+  const [isUser, setIsUser] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
@@ -22,10 +24,12 @@ const BookDetail = (props) => {
     return <h1>Loading...</h1>;
   }
 
-  const redirectToSignUp = () => {
-    if(!props.user){
-      return <Navigate to={`/sign-up`} />
-    }
+  if(isUser) {
+    return <Navigate to={`/sign-up`} />
+  }
+
+  if(isDeleted) {
+    return <Navigate to="/books"/>
   }
 
   return (
@@ -43,7 +47,7 @@ const BookDetail = (props) => {
             </Link>
             <button
               className="delete-button"
-              onClick={ props.user ? () => deleteBook(book._id) : () => redirectToSignUp }
+              onClick={ props.user ? () => {deleteBook(book._id) && setIsDeleted(true)} : () => setIsUser(true) }
             >Delete</button>
           </div>
         </div>
