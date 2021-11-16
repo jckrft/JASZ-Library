@@ -4,7 +4,7 @@ import { signIn } from '../../services/users';
 import './SignIn.css';
 
 const SignIn = (props) => {
-	const history = useNavigate();
+	const navigate = useNavigate();
 
 	const [signInForm, setSignInForm] = useState({
 		email:'',
@@ -28,7 +28,7 @@ const SignIn = (props) => {
 		try {
 			const user = await signIn(signInForm);
 			setUser(user);
-			history.push('/')
+			navigate('/');
 		} catch (error) {
 			console.error(error);
 			setSignInForm({
@@ -53,25 +53,29 @@ const SignIn = (props) => {
 	}
 
 	return (
-		<form className="sign-in-form" onSubmit={onSignIn}>
-			<label htmlFor="email">Email</label>
-			<input
-				className="input-email"
-				placeholder="Email Address"
-				value={email}
-				required
-				onChange={handleChange}
-			/>
-			<label htmlFor="password">Password</label>
-			<input
-				className="input-password"
-				placeholder="Password"
-				value={password}
-				required
-				onChange={handleChange}
-			/>
-			{renderError()}
-		</form>
+		<div>
+			<form className="sign-in-form" onSubmit={onSignIn}>
+				<label htmlFor="email">Email</label>
+				<input
+					className="input-email"
+					placeholder="Email Address"
+					value={props.email}
+					name="email"
+					required
+					onChange={handleChange}
+				/>
+				<label htmlFor="password">Password</label>
+				<input
+					className="input-password"
+					placeholder="Password"
+					value={props.password_digest}
+					name="password"
+					required
+					onChange={handleChange}
+				/>
+				{renderError()}
+			</form>
+		</div>
 	)
 }
 
