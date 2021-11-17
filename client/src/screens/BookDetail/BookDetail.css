@@ -1,8 +1,8 @@
-/* comment */
-
 .book-detail{
   display: flex;
   justify-content: center;
+  border: 2px green;
+  margin: 20px
 }
 
 .book-detail-image {
