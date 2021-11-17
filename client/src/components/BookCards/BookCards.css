@@ -1,1 +1,8 @@
-/* comment */
+.cards{
+  /* display:flex;
+  flex-direction: row; */
+  overflow:auto;
+  white-space: nowrap;
+  align-items:center;
+  height:50vh;
+}
