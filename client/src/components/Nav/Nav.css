@@ -2,7 +2,7 @@
 
 nav {
     flex: 1;
-    position: fixed;
+    position: relative;
     width: 100%;
     background-color: white;
     z-index: 1;

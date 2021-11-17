@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout/Layout';
 import BookCards from '../../components/BookCards/BookCards';
+import './Home.css';
 
 const Home = (props) => {
 	

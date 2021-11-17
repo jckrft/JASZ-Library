@@ -1,1 +1,7 @@
-/* comment */
+.book-card-image {
+	width: 25%;
+}
+
+.book-card {
+	margin: 5%;
+}
