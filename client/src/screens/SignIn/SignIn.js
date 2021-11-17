@@ -2,6 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { signIn } from '../../services/users';
 import Layout from '../../components/Layout/Layout';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import './SignIn.css';
 
 const SignIn = (props) => {
@@ -45,21 +48,22 @@ const SignIn = (props) => {
 		const toggleSignIn = signInForm.isError ? 'ERROR' : ''
 		if(signInForm.isError) {
 			return (
-				<button type="submit" className={toggleSignIn}>{signInForm.errorMsg}</button>
+				<Button variant="contained" color="warning" type="submit" className={toggleSignIn}>{signInForm.errorMsg}</Button>
 			)
 		}
 		else {
-			return <button type="submit">Sign In</button>
+			return <Button variant="outlined" type="submit">Sign In</Button>
 		}
 	}
 
 	return (
 		<Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
 			<div className="sign-in-form-container">
+			<Box>
 				<h3>Sign In</h3>
 					<form className="sign-in-form" onSubmit={onSignIn}>
-						<label htmlFor="email">Email</label>
-						<input
+						<TextField
+							label="Email"
 							className="input-email"
 							placeholder="Email Address"
 							value={email}
@@ -67,8 +71,8 @@ const SignIn = (props) => {
 							required
 							onChange={handleChange}
 						/>
-						<label htmlFor="password">Password</label>
-						<input
+						<TextField
+							label="Password"
 							className="input-password"
 							placeholder="Password"
 							type="password"
@@ -79,6 +83,7 @@ const SignIn = (props) => {
 						/>
 						{renderError()}
 					</form>
+					</Box>
 				</div>
 		</Layout>
 	)

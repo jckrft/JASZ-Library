@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { signUp } from '../../services/users.js'
 import { useNavigate, Link} from 'react-router-dom'
 import Layout from '../../components/Layout/Layout';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import './SignUp.css'
 
 
@@ -50,12 +53,12 @@ const SignUp = (props) => {
     const toggleForm = form.isError ? 'danger' : ''
     if (form.isError) {
       return (
-        <button type='submit' className={toggleForm}>
+        <Button variant="contained" color="warning" type='submit' className={toggleForm}>
           {form.errorMsg}
-        </button>
+        </Button>
       )
     } else {
-      return <button type='submit'>Sign Up</button>
+      return <Button variant="outlined" type='submit'>Sign Up</Button>
     }
   }
 
@@ -65,41 +68,39 @@ const SignUp = (props) => {
 	return (
 		<Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
 	    <div className='sign-up-form-container'>
+	    <Box>
 	      <h3>Sign Up</h3>
 	      <form className="sign-up-form" onSubmit={onSignUp}>
-	        <label>Username</label>
-	        <input
+	        <TextField
 	          required
+	          label="username"
 	          type='text'
 	          name='username'
 	          value={username}
 	          placeholder='Enter username'
 	          onChange={handleChange}
 	        />
-
-	        <label>Email Address</label>
-	        <input
+	        <TextField
 	          required
+	          label="email"
 	          type='text'
 	          name='email'
 	          value={email}
 	          placeholder='Enter email'
 	          onChange={handleChange}
 	        />
-
-	        <label>Password</label>
-	        <input
+	        <TextField
 	          required
+	          label="password"
 	          name='password'
 	          value={password}
 	          type='password'
 	          placeholder='Password'
 	          onChange={handleChange}
 	        />
-
-	        <label>Password Confirmation</label>
-	        <input
+	        <TextField
 	          required
+	          label="confirm password"
 	          name='passwordConfirmation'
 	          value={passwordConfirmation}
 	          type='password'
@@ -108,7 +109,8 @@ const SignUp = (props) => {
 	        />
 	        {renderError()}
 	      </form>
-	      <p>Already Have An Account? <Link to="/sign-in">Sign In</Link></p>
+	      <p>Already Have An Account? <Link className="sign-in" to="/sign-in">Sign In</Link></p>
+	      </Box>
 	    </div>
 	    </Layout>
 	)
