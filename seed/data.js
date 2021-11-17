@@ -26,7 +26,7 @@ const insertData = async () => {
       title: "Catch-22",
       author: "Joseph Heller",
       genre: "Historical Fiction",
-      imgURL: "https://m.media-amazon.com/images/I/51yahH8t3PL.jpg",
+      imgURL: "https://upload.wikimedia.org/wikipedia/en/9/99/Catch22.jpg",
       description: "The novel is set during World War II, from 1942 to 1944. It mainly follows the life of antihero Captain John Yossarian, a U.S. Army Air Forces B-25 bombardier. Most of the events in the book occur while the fictional 256th US Army Air Squadron is based on the island of Pianosa, in the Mediterranean Sea west of Italy, though it also covers episodes from basic training at Lowry Field in Colorado and Air Corps training at Santa Ana Army Air Base in California. The novel examines the absurdity of war and military life through the experiences of Yossarian and his cohorts, who attempt to maintain their sanity while fulfilling their service requirements so that they may return home."
     },
     {
