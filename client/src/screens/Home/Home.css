@@ -8,8 +8,7 @@ h1 {
 }
 
 .join-button {
-  width: auto;
-  font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom:30px;
   color:black;
+  width: 150px;
 }

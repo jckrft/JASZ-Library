@@ -13,7 +13,7 @@ const Home = (props) => {
 				<BookCards />
       </div>
       <Link to='/sign-up'>
-      <Button className='join-button' variant='outlined'>Join us!</Button>
+      <Button className='join-button' variant='contained'>Join us!</Button>
     </Link>
 		</Layout>
 	)
