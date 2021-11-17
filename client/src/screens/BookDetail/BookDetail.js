@@ -4,6 +4,7 @@ import { getBook } from "../../services/books.js";
 import  Layout  from "../../components/Layout/Layout.js";
 import { Link, useParams } from "react-router-dom";
 import EditIcon from '@mui/icons-material/Edit';
+// Netlify comment
 
 const BookDetail = (props) => {
   const [book, setBook] = useState(null);
