@@ -55,6 +55,7 @@ const Books = (props) => {
         {searchResult.map((book, index) => {
           return (
             <Book
+              key={index}
               _id={book._id}
               title={book.title}
               author={book.author}

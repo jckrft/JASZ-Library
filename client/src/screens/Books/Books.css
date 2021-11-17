@@ -3,7 +3,7 @@
 .books-header {
   font-family: 'IM Fell English', serif;
   display:flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .books {

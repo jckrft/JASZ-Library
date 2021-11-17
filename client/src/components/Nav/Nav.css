@@ -38,7 +38,7 @@ nav {
     font-size: 24px;
     max-width: 30vw;
     justify-content: flex-end;
-    align-items: end;
+    align-items: flex-end;
     position: absolute;
     top: 0%;
     right: 8%;
