@@ -10,7 +10,6 @@ const BookEdit = (props) => {
   const [isDeleted, setIsDeleted] = useState(false);
   const [isUser, setIsUser] = useState(false);
 
-
   const [book, setBook] = useState({
     title: '',
     author: '',
@@ -55,6 +54,7 @@ const BookEdit = (props) => {
   if(isUser) {
     return <Navigate to={`/sign-up`} />
   }
+
 
   return (
     <Layout user={props.user}>
