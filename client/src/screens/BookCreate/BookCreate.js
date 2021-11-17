@@ -117,8 +117,7 @@ const BookCreate = (props) => {
 				    onChange={handleChange}
 				  />
 
-            <Button variant="outlined" type="submit" className="submit-button" style={{ width: '100px', margin: '30px 0px 0px 260px'}}
->Submit</Button>
+            <Button variant="outlined" type="submit" className="submit-button" style={{ width: '100px', margin: '30px 0px 0px 260px'}}>Submit</Button>
 			</form>
       </Box>
       </div>
