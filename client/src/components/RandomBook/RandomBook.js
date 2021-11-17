@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
 import BookCard from '../BookCard/BookCard.js'
 import { getBooks } from '../../services/books';
+import './RandomBook.css';
 
 const RandomBook = () => {
 	const [randomBooks, setRandomBooks] = useState([]);
-
+	
 	const getRandom = (books) => {
 		let randomNum = Math.floor(Math.random() * books.length - 1)
 		let randomBook = books[randomNum]
@@ -19,22 +20,23 @@ const RandomBook = () => {
 		fetchBooks();		
 	}, [])
 
-	const Cards = randomBooks.map((book, index) => (
-    <div key={index}>
-    <BookCard
-      key={index}
-      _id={book._id}
-      imgURL={book.imgURL}
-      title={book.title}
-     
-    />
-     <p>{book.description}</p>
+	const randomCards = randomBooks.map((book, index) => (
+    <div className="random-cards" key={index}>
+	    <BookCard
+	      key={index}
+	      _id={book._id}
+	      imgURL={book.imgURL}
+	      title={book.title}
+	     
+	    />
+		<p className={`book-${index}`}>{book.title}</p>
      </div>
   ))
 
 	return (
 		<div className='random-books'>
-    		{randomBooks ? <div className='cards'>{Cards}</div> : ""}
+			<h2 className="staff-picks">Staff Picks</h2>
+    		{randomBooks ? <div className='random-cards-container'>{randomCards}</div> : ""}
     	</div>
 	)
 }

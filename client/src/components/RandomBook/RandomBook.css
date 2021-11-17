@@ -1,0 +1,22 @@
+.random-books {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.random-cards-container {
+	display: flex;
+	justify-content: center;
+}
+
+.random-cards {
+	display: flex;
+	flex-direction: column;
+}
+
+.staff-picks {
+	display: block;
+	font-family: 'IM Fell English', serif;
+	font-size: 300%;
+}
+
