@@ -71,7 +71,8 @@ const SignIn = (props) => {
 							required
 							onChange={handleChange}
 						/>
-						<TextField
+            <TextField
+              style ={{margin: '10px 0px 10px 0px'}}
 							label="Password"
 							className="input-password"
 							placeholder="Password"

@@ -21,7 +21,7 @@ const Nav = (props) => {
         return (
             <nav>
                 <div className="nav">
-                    <Link className="logo" to="/">JASZ Library</Link>
+                    <Link className="logo" to="/">Library</Link>
                     <div className="links">
                         {props.user !== "" ? authenticatedOptions : unauthenticatedOptions}
                         {props.user && <div className="link welcome">{props.user.username ? props.user.username : props.user}</div>}
