@@ -27,10 +27,10 @@ const Books = (props) => {
       setSortType(type)
     }
     switch (type) {
-      case 'name-ascending':
+      case 'title-ascending':
         setSearchResult(AZ(searchResult))
         break
-      case 'name-descending':
+      case 'title-descending':
         setSearchResult(ZA(searchResult))
         break
       default:
