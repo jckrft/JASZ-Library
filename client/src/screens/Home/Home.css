@@ -6,3 +6,9 @@ h1 {
 	margin: 0 auto;
 	padding: 10%;
 }
+
+.join-button {
+  margin-bottom:30px;
+  color:black;
+  width: 150px;
+}
