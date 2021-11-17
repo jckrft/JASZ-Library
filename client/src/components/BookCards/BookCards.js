@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getBooks } from '../../services/books.js'
 import BookCard from '../BookCard/BookCard.js'
+import './BookCards.css'
 
 const BookCards = () => {
   const [books, setBooks] = useState([])
