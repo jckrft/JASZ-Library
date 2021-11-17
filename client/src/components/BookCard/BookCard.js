@@ -1,4 +1,4 @@
-//import './BookCard.css';
+import './BookCard.css';
 import { Link } from 'react-router-dom'
 
 const BookCard = (props) => {

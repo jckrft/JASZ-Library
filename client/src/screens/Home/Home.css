@@ -1,1 +1,8 @@
-/* comment */
+h1 {
+	font-family: 'IM Fell English', serif;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: whitesmoke;
+	font-size: 700%;
+	margin: 0 auto;
+	padding: 10%;
+}
