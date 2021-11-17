@@ -2,9 +2,15 @@ import { useState, useEffect } from 'react'
 import './BookEdit.css'
 import { useParams, Navigate } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
-import { getBook, updateBook } from '../../services/books'
+import { getBook, updateBook, deleteBook } from '../../services/books'
+import DeleteIcon from '@mui/icons-material/Delete';
+
 
 const BookEdit = (props) => {
+  const [isDeleted, setIsDeleted] = useState(false);
+  const [isUser, setIsUser] = useState(false);
+
+
   const [book, setBook] = useState({
     title: '',
     author: '',
@@ -40,6 +46,14 @@ const BookEdit = (props) => {
 
   if (isUpdated) {
     return <Navigate to={`/books/${id}`} />
+  }
+
+  if(isDeleted) {
+    return <Navigate to="/books"/>
+  }
+
+  if(isUser) {
+    return <Navigate to={`/sign-up`} />
   }
 
   return (
@@ -101,6 +115,11 @@ const BookEdit = (props) => {
           <button type='submit' className='save-button'>
             Save
           </button>
+          <button
+              className="delete-button"
+              onClick={ props.user ? () => {deleteBook(book._id) && setIsDeleted(true)} : () => setIsUser(true) }
+            ><DeleteIcon />
+            </button>
         </form>
       </div>
     </Layout>

@@ -13,8 +13,9 @@ const BookCards = () => {
   fetchBooks()
   }, [])
 
-  const Cards = books.map((book) => (
+  const Cards = books.map((book, index) => (
     <BookCard
+      key={index}
       _id={book._id}
       imgURL={book.imgURL}
       title={book.title}

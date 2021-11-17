@@ -1,16 +1,13 @@
 import "./BookDetail.css";
 import { useEffect, useState } from "react";
-import { getBook, deleteBook } from "../../services/books.js";
+import { getBook } from "../../services/books.js";
 import  Layout  from "../../components/Layout/Layout.js";
-import { Link, useParams, Navigate } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
 
 const BookDetail = (props) => {
   const [book, setBook] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  const [isDeleted, setIsDeleted] = useState(false);
-  const [isUser, setIsUser] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
@@ -24,14 +21,6 @@ const BookDetail = (props) => {
 
   if (!isLoaded) {
     return <h1>Loading...</h1>;
-  }
-
-  if(isUser) {
-    return <Navigate to={`/sign-up`} />
-  }
-
-  if(isDeleted) {
-    return <Navigate to="/books"/>
   }
 
   return (
@@ -49,12 +38,6 @@ const BookDetail = (props) => {
               <EditIcon/>
             </Link>
             
-            <button
-              className="delete-button"
-              onClick={ props.user ? () => {deleteBook(book._id) && setIsDeleted(true)} : () => setIsUser(true) }
-            ><DeleteIcon />
-            </button>
-          
           </div>
         </div>
       </div>
