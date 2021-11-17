@@ -6,3 +6,10 @@ h1 {
 	margin: 0 auto;
 	padding: 10%;
 }
+
+.join-button {
+  width: auto;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color:black;
+}

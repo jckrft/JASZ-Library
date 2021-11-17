@@ -1,5 +1,7 @@
 import Layout from '../../components/Layout/Layout';
 import BookCards from '../../components/BookCards/BookCards';
+import Button from '@mui/material/Button';
+import {Link} from 'react-router-dom'
 import './Home.css';
 
 const Home = (props) => {
@@ -9,7 +11,10 @@ const Home = (props) => {
 			<div className="home-page">
 				<h1>Welcome to the Library</h1>
 				<BookCards />
-			</div>
+      </div>
+      <Link to='/sign-up'>
+      <Button className='join-button' variant='outlined'>Join us!</Button>
+    </Link>
 		</Layout>
 	)
 }
