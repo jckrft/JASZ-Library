@@ -65,8 +65,10 @@ const Books = (props) => {
   return (
     <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
       <h1 className='books-header'>Books</h1>
-      <Search onSubmit={handleSubmit} handleSearch={handleSearch}/>
-      <Sort onSubmit={handleSubmit} handleSort={handleSort}/>
+      <div className="search-and-sort-container">
+        <Search onSubmit={handleSubmit} handleSearch={handleSearch}/>
+        <Sort onSubmit={handleSubmit} handleSort={handleSort}/>
+      </div>
       <div className='books'>
         {searchResult.map((book, index) => {
           return (

@@ -1,11 +1,14 @@
 import './Sort.css'
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
+import { useState } from 'react';
 
 const Sort = (props) => {
-  
+  const [sortValue, setSortValue] = useState("Sort By")
+
   const handleSort = (ev) => {
     props.handleSort(ev.target.value)
+    setSortValue(ev.target.value)
   }
 
   return (
@@ -13,7 +16,7 @@ const Sort = (props) => {
       <label id="label">Sort by: </label>
       <Select className='sort'
         labelId="label"
-        value="title-ascending"
+        value={sortValue}
         label="Sort by"
         onChange={handleSort}
       >

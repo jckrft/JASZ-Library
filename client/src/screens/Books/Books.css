@@ -13,3 +13,20 @@ flex-wrap: wrap;
 justify-content:center;
 }
 
+
+.search-and-sort-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  margin-right: 5%;
+}
+
+label {
+  margin-right: 5%;
+}
+
+.sort-container {
+  width: 25%;
+}

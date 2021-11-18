@@ -1,9 +1,10 @@
 import './Search.css'
+import TextField from '@mui/material/TextField';
 
 const Search = (props) => {
     return (
         <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
-            <input
+            <TextField
                 className="search-input"
                 value={props.value}
                 onChange={(e) => props.handleSearch(e)}
