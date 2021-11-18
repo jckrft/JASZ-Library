@@ -69,7 +69,8 @@ a {
 
 @media (max-width: 500px) {
     nav {
-        width: 98%;
+        /* width: 98%; */
+        
     }
     .logo {
         max-width: 50%;
