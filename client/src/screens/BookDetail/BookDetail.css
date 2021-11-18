@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=IM+Fell+English&display=swap');
 
 .description {
+  display: flex;
+  justify-content: space-evenly;
   font-family: 'Fira Code', monospace;
-
-  overflow: hidden; 
-  white-space: wrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  /* animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite; */
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .book-detail{
   display: flex;
   justify-content: center;
-  margin: 20px
-
+  margin: 10px
 }
 
 .book-detail-img {
@@ -24,6 +19,9 @@
   justify-content: flex-start;
   width: 30%;
   height: 50%;
+  max-width: 340;
+  max-height: 500;
+  margin-top: 20px;
 }
 
 .detail {
@@ -34,6 +32,7 @@
 }
 
 .title{
+  font-size: xx-large;
   font-family: 'Fira Code', monospace;
   margin-bottom: 10px;
   font-size: large;
@@ -49,14 +48,3 @@
   font-family: 'Fira Code', monospace;
   margin-bottom: 10px;
 }
-/* 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
-
-  
-} */
