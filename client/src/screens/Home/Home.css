@@ -19,16 +19,29 @@ h1 {
 	padding: 10%;
 }
 
+.hidden-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .recent-favorites {
 	display: block;
 	font-family: 'IM Fell English', serif;
 	font-size: 300%;
 }
 
-.join-header {
-	display: block;
+.join-header-visible {
+	display: flex;
 	font-family: 'IM Fell English', serif;
 	font-size: 300%;
+}
+
+.join-header-hidden {
+	display: flex;
+	font-family: 'IM Fell English', serif;
+	font-size: 300%;
+	visibility: collapse;
 }
 
 .join-button {
@@ -42,10 +55,23 @@ h1 {
 }
 
 .random-books {
-	margin-top: 10%;
 	min-height: 500px;
 }
 
 .random-cards-container {
 	min-height: 500px;
 }
+
+.sign-up-redirect-visible {
+	display: flex;
+	width: 200%;
+	justify-content: center;
+	padding-bottom: 10%;
+}
+
+.sign-up-redirect-hidden {
+	display: flex;
+	visibility: collapse;
+	padding-bottom: 0;
+}
+
