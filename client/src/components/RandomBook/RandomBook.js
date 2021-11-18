@@ -15,7 +15,7 @@ const RandomBook = () => {
 	useEffect(() => {
 		const fetchBooks = async () => {
 			const books = await getBooks()
-			setRandomBooks([getRandom(books), getRandom(books)])	
+			books ? setRandomBooks([getRandom(books), getRandom(books)]) : setRandomBooks("loading")
 		}
 		fetchBooks();		
 	}, [])
@@ -24,12 +24,12 @@ const RandomBook = () => {
     <div className="random-cards" key={index}>
 	    <BookCard
 	      key={index}
-	      _id={book._id}
-	      imgURL={book.imgURL}
-	      title={book.title}
+	      _id={book ? `${book._id}` : ""}
+	      imgURL={book ? `${book.imgURL}` : ""}
+	      title={book ? `${book.title}` : ""}
 	     
 	    />
-		<p className={`book-${index}`}>{book.title}</p>
+		<p className={`book-${index}`}>{book ? `${book.title}` : ""}</p>
      </div>
   ))
 
