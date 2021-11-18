@@ -78,3 +78,22 @@ h1 {
 input {
 	margin-right: 10%;
 }
+
+.search-items {
+	display: flex;
+	justify-content: center;
+}
+
+.search-button {
+  color: black;
+  width: 100%;
+}
+
+.search-link {
+  color: black;
+  margin-left: 5%;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+	height: 100%;
+}

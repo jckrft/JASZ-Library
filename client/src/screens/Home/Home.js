@@ -17,10 +17,19 @@ const Home = (props) => {
 				<h1 className="home-header">Welcome to the Library</h1>
 				<h2 className="recent-favorites">Recent Additions</h2>
 				<BookCards />
-				<TextField id="outlined-search" label="Search Books" type="search" placeholder="Search Books" value={query} onChange={(ev) => searchBooks(ev.target.value)}/>
-				<Link to="/search-results">
-					<Button className='join-button' variant='contained'>Search</Button>
-				</Link>
+				<div className="search-items">
+					<TextField id="outlined-search" 
+						label="Search Books" 
+						type="search" 
+						placeholder="Search Books" 
+						multiline
+						value={query} 
+						onChange={(ev) => searchBooks(ev.target.value)}
+					/>
+					<Link className="search-link" to="/search-results">
+						<Button className='search-button' variant='contained'>Search</Button>
+					</Link>
+				</div>
       			<div className="hidden-container">
 	      			<h2 className={user ? "join-header-visible" : "join-header-hidden"}>Welcome Back!</h2>
 	      			<h2 className={user ? "join-header-hidden" : "join-header-visible"}>Interested in Contributing?</h2>
