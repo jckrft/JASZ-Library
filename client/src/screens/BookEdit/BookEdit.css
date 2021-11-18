@@ -1,1 +1,37 @@
-/* comment */
+.book-edit {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.edit-book-image {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.edit-form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.edit-button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.save-button {
+	width: 10%;
+	font-size: 125%;
+	margin-right: 2%;
+}
+
+.delete-button {
+	width: 10%;
+}

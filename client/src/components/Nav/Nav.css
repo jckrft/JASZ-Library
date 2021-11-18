@@ -20,7 +20,8 @@ nav {
 .logo {
     font-family: 'IM Fell English', serif;
     color: whitesmoke;
-    text-align: center;
+    text-align: left;
+    margin-left: 2%;
     font-size: 34px;
     letter-spacing: -3px;
     flex: 1;

@@ -1,7 +1,7 @@
 import Book from '../../components/Book/Book';
 import Layout from '../../components/Layout/Layout';
 import Sort from '../../components/Sort/Sort';
-import { AZ, ZA } from '../../utils/sort';
+import { AZTitle, ZATitle, AZAuthor, ZAAuthor } from '../../utils/sort';
 import './Books.css';
 
 import { useEffect, useState } from 'react';
@@ -28,10 +28,16 @@ const Books = (props) => {
     }
     switch (type) {
       case 'title-ascending':
-        setSearchResult(AZ(searchResult))
+        setSearchResult(AZTitle(searchResult))
         break
       case 'title-descending':
-        setSearchResult(ZA(searchResult))
+        setSearchResult(ZATitle(searchResult))
+        break
+        case 'author-ascending':
+        setSearchResult(AZAuthor(searchResult))
+        break
+      case 'author-descending':
+        setSearchResult(ZAAuthor(searchResult))
         break
       default:
         break
