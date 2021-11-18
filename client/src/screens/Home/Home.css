@@ -1,14 +1,77 @@
 h1 {
 	font-family: 'IM Fell English', serif;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
+	font-size: 700%;
+	margin: 0 auto;
+	padding: 2%;
+}
+
+.home-header {
+	font-family: 'IM Fell English', serif;
+	background-image: url(https://www.dramabookshop.com/wp-content/uploads/2020/05/DMBK-Interior-1-062419-ATK.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	color: whitesmoke;
 	font-size: 700%;
 	margin: 0 auto;
 	padding: 10%;
 }
 
-.join-button {
-  margin-bottom:30px;
-  color:black;
-  width: 150px;
+.hidden-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+.recent-favorites {
+	display: block;
+	font-family: 'IM Fell English', serif;
+	font-size: 300%;
+}
+
+.join-header-visible {
+	display: flex;
+	font-family: 'IM Fell English', serif;
+	font-size: 300%;
+}
+
+.join-header-hidden {
+	display: flex;
+	font-family: 'IM Fell English', serif;
+	font-size: 300%;
+	visibility: collapse;
+}
+
+.join-button {
+  margin-bottom: 30%;
+  color: black;
+  width: 10%;
+}
+
+.cards {
+	margin-bottom: 5%;
+}
+
+.random-books {
+	min-height: 500px;
+}
+
+.random-cards-container {
+	min-height: 500px;
+}
+
+.sign-up-redirect-visible {
+	display: flex;
+	width: 200%;
+	justify-content: center;
+	padding-bottom: 10%;
+}
+
+.sign-up-redirect-hidden {
+	display: flex;
+	visibility: collapse;
+	padding-bottom: 0;
+}
+

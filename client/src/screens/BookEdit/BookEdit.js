@@ -4,6 +4,7 @@ import { useParams, Navigate } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getBook, updateBook, deleteBook } from '../../services/books'
 import DeleteIcon from '@mui/icons-material/Delete';
+import TextField from '@mui/material/TextField';
 
 
 const BookEdit = (props) => {
@@ -59,67 +60,82 @@ const BookEdit = (props) => {
   return (
     <Layout user={props.user}>
       <div className='book-edit'>
-        <div className='image-container'>
+        
           <img
             className='edit-book-image'
             src={book.imgURL}
             alt={book.title}
           />
-          <form onSubmit={handleSubmit}>
-            <input
+        
+        <form className='edit-form' onSubmit={handleSubmit}>
+          <TextField
               className='edit-input-image-link'
               placeholder='Image Link'
               value={book.imgURL}
               name='imgURL'
+              label="Image URL"
               required
+              multiline
+              variant="standard"
               onChange={handleChange}
-            />
-          </form>
-        </div>
-        <form className='edit-form' onSubmit={handleSubmit}>
-          <input
+          />
+          <br />
+          <TextField
             className='input-title'
             placeholder='Title'
             value={book.title}
             name='title'
+            label="Title"
             required
+            variant="standard"
             autoFocus
             onChange={handleChange}
           />
-          <input
+          <br />
+          <TextField
             className='input-author'
             placeholder='Author'
             value={book.author}
             name='author'
+            label='Author'
             required
+            variant="standard"
             onChange={handleChange}
           />
-          <input
+          <br />
+          <TextField
             className='input-genre'
             placeholder='Genre'
             value={book.genre}
             name='genre'
+            label="Genre"
             required
+            variant="standard"
             onChange={handleChange}
           />
-          <textarea
+          <br />
+          <TextField
             className='textarea-description'
-            rows={10}
-            cols={78}
+            rows={8}
             placeholder='Description'
             value={book.description}
             name='description'
+            label="Description"
             required
+            multiline
+            variant="standard"
             onChange={handleChange}
           />
-          <button type='submit' className='save-button'>
-            Save
-          </button>
-          <button
-              className="delete-button"
-              onClick={ props.user ? () => {deleteBook(book._id) && setIsDeleted(true)} : () => setIsUser(true) }
-            ><DeleteIcon />
+          <div className="edit-button-container">
+            <button type='submit' className='save-button'>
+              Save
             </button>
+            <button
+                className="delete-button"
+                onClick={ props.user ? () => {deleteBook(book._id) && setIsDeleted(true)} : () => setIsUser(true) }
+              ><DeleteIcon />
+              </button>
+            </div>
         </form>
       </div>
     </Layout>

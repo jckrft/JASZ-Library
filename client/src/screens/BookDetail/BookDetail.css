@@ -7,9 +7,11 @@
 
 }
 
-.book-detail-image {
-display: flex;
-justify-content: flex-start;
+.book-detail-img {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
+  height: 50%;
 }
 
 .detail {
