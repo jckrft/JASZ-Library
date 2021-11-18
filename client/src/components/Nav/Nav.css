@@ -12,21 +12,27 @@ nav {
 
 .nav {
     display: flex;
-    padding: 20px 0;
+    padding: 8px 0;
     background-color: black;
     width: 100%;
 }
 
 .logo {
-    font-family: 'IM Fell English', serif;
-    color: whitesmoke;
+    /* font-family: 'IM Fell English', serif;
+    color: whitesmoke; */
     text-align: left;
-    margin-left: 2%;
-    font-size: 34px;
-    letter-spacing: -3px;
+    margin-left: 1%;
+    /* font-size: 34px;
+    letter-spacing: -3px; */
     flex: 1;
     max-width: 30vw;
     transition: 250ms all;
+    padding-top: 5px;
+}
+
+.logo img {
+  width: 155px;
+  height: 55px;
 }
 
 .logo:hover {
@@ -40,6 +46,7 @@ nav {
     max-width: 30vw;
     justify-content: flex-end;
     align-items: flex-end;
+    align-content: center;
     position: absolute;
     top: 0%;
     right: 8%;
@@ -50,7 +57,7 @@ nav {
   white-space: nowrap;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .link-welcome{
