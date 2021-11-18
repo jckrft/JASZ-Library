@@ -1,6 +1,7 @@
 import Book from '../../components/Book/Book';
 import Layout from '../../components/Layout/Layout';
 import Sort from '../../components/Sort/Sort';
+import Search from '../../components/Search/Search';
 import { AZTitle, ZATitle, AZAuthor, ZAAuthor } from '../../utils/sort';
 import './Books.css';
 
@@ -49,6 +50,14 @@ const Books = (props) => {
     setApplySort(false)
   }
 
+  const handleSearch = (ev) => {
+    const bookResults = books.filter((book) => 
+      book.title.toLowerCase().includes(ev.target.value.toLowerCase())
+    )
+    setSearchResult(bookResults)
+    setApplySort(true)
+  }
+
   if (!books) return <h1>loading...</h1>
 
   const handleSubmit = (ev) => ev.preventDefault()
@@ -56,6 +65,7 @@ const Books = (props) => {
   return (
     <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
       <h1 className='books-header'>Books</h1>
+      <Search onSubmit={handleSubmit} handleSearch={handleSearch}/>
       <Sort onSubmit={handleSubmit} handleSort={handleSort}/>
       <div className='books'>
         {searchResult.map((book, index) => {

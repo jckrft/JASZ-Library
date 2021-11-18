@@ -1,4 +1,5 @@
 import './Nav.css'
+import logo from '../../assets/logo-image.png'
 import { Link } from 'react-router-dom'
 
 const authenticatedOptions = (
@@ -21,7 +22,7 @@ const Nav = (props) => {
         return (
             <nav>
                 <div className="nav">
-                    <Link className="logo" to="/">Library</Link>
+                    <Link className="logo" to="/"><img src={logo} alt="Logo" /></Link>
                     <div className="links">
                         {props.user !== "" ? authenticatedOptions : unauthenticatedOptions}
                         {props.user && <div className="link welcome">{props.user.username ? props.user.username : `Welcome, ${props.user}`}</div>}
