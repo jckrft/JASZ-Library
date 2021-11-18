@@ -3,6 +3,7 @@ import BookCards from '../../components/BookCards/BookCards';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom'
 import RandomBook from '../../components/RandomBook/RandomBook';
+import TextField from '@mui/material/TextField';
 
 
 import './Home.css';
@@ -16,7 +17,7 @@ const Home = (props) => {
 				<h1 className="home-header">Welcome to the Library</h1>
 				<h2 className="recent-favorites">Recent Additions</h2>
 				<BookCards />
-				<input type="text" placeholder="Search Books" value={query} onChange={(ev) => searchBooks(ev.target.value)}/>
+				<TextField id="outlined-search" label="Search Books" type="search" placeholder="Search Books" value={query} onChange={(ev) => searchBooks(ev.target.value)}/>
 				<Link to="/search-results">
 					<Button className='join-button' variant='contained'>Search</Button>
 				</Link>

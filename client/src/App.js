@@ -58,8 +58,6 @@ function App() {
       setQuery(ev);
     }
 
-    console.log(foundBooks)
-
   return (
     <div className="App">
       <Routes>
