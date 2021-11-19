@@ -3,7 +3,8 @@
 .random-books {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content:left;
+  padding-right: 100px;
 }
 
 .random-cards-container {
@@ -14,11 +15,12 @@
 .random-cards {
 	display: flex;
 	flex-direction: column;
-  padding: 0px 100px;
+  padding: 0px 0px 0px 100px;
 }
 
 .staff-picks {
-	display: flex;
+	display: block;
+  text-align: left;
 	font-family: 'IM Fell English', serif;
 	font-size: 200%;
 }
