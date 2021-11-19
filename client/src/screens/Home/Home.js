@@ -13,10 +13,12 @@ import './Home.css';
 const Home = (props) => {
 	const {user, query, searchBooks} = props
 	const [message, setMessage] = useState("Interested in Contributing?");
+	const [buttonText, setButtonText] = useState("Join us!");
 
 	useEffect(() => {
 		if(user) {
 			setMessage("Welcome Back!");
+			setButtonText("Browse Books");
 			return;
 		}	
 	}, [user])
@@ -31,18 +33,18 @@ const Home = (props) => {
 
         <div className="hidden-container">
 	      			<h2 className="join-header-visible">{message}</h2>
-			    	  <Link className={user ? "sign-up-redirect-hidden" : "sign-up-redirect-visible"} to='/sign-up'>
-			     		<Button className='join-button' variant='outlined'>Join us!</Button>
+			    	  <Link className="sign-up-redirect-visible" to={user ? "/books" : "/sign-up-"}>
+			     		<Button className='join-button' variant='outlined'>{buttonText}</Button>
 			    	  </Link>
         </div>
-        
+        <BookReviews />
         <div className='spotlight-search'>
         <div className='book-spotlight'>
         <RandomBook />
         </div>
 
         <div className='library-search'>
-        <h5 className='search-addon'>not what you're looking for?</h5>
+        <h5 className='search-addon'>Not what you're looking for?</h5>
 				<h3 className="recent-favorites">Search the Library</h3>
 				<div className="search-items">
 					<TextField id="outlined-search" 
@@ -60,7 +62,7 @@ const Home = (props) => {
         </div>
         </div>
 
-        <BookReviews />
+        
 		        
 			</div>
 		</Layout>
