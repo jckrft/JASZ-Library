@@ -52,4 +52,23 @@ form {
   }
 }
 
+/* 
+Media Query 
+for 
+small phone screens 
+*/
+
+@media (max-width: 775px) {
+  h1 {
+    font-size: 400%;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .App {
+    width: 110%;
+  }
+}
 
