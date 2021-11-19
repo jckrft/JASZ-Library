@@ -3,6 +3,7 @@ import BookCards from '../../components/BookCards/BookCards';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom'
 import RandomBook from '../../components/RandomBook/RandomBook';
+import BookReviews from '../../components/BookReviews/BookReviews';
 import TextField from '@mui/material/TextField';
 import { useState, useEffect } from 'react';
 
@@ -46,7 +47,8 @@ const Home = (props) => {
 			    	<Link className={user ? "sign-up-redirect-hidden" : "sign-up-redirect-visible"} to='/sign-up'>
 			     		<Button className='join-button' variant='outlined'>Join us!</Button>
 			    	</Link>
-		      	</div>
+        </div>
+        <BookReviews />
 		        <RandomBook />
 			</div>
 		</Layout>
