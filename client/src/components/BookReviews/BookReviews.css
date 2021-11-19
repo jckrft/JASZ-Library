@@ -10,8 +10,7 @@
 .book-reviews {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  
+  flex-direction: row; 
 }
 
 .staff-picks {
