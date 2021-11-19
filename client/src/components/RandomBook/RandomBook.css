@@ -14,12 +14,13 @@
 .random-cards {
 	display: flex;
 	flex-direction: column;
+  padding: 0px 100px;
 }
 
 .staff-picks {
-	display: block;
+	display: flex;
 	font-family: 'IM Fell English', serif;
-	font-size: 300%;
+	font-size: 200%;
 }
 
 p {
