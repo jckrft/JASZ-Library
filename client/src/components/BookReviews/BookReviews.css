@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=IM+Fell+English&display=swap');
 
+.book-reviews-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.372);
+}
+
 .book-reviews {
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.372);
+  flex-direction: row;
+  
 }
 
 .staff-picks {
   display: block;
   font-family: 'IM Fell English', serif;
+  margin-left: 10%;
 }
 
 .book-1 {

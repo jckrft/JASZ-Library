@@ -35,7 +35,7 @@ const RandomBook = () => {
 
 	return (
 		<div className='random-books'>
-			<h2 className="staff-picks">Book Spotlight</h2>
+			<h2 className="book-spotlight">Book Spotlight</h2>
     		{randomBooks ? <div className='random-cards-container'>{randomCards}</div> : ""}
     	</div>
 	)

@@ -25,6 +25,12 @@
 	font-size: 200%;
 }
 
+.book-spotlight {
+  display: block;
+  font-family: 'IM Fell English', serif;
+  margin-left: 10%;
+}
+
 p {
 	font-family: 'Be Vietnam Pro', sans-serif;
 }
