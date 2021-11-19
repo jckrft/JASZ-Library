@@ -27,8 +27,23 @@ const Home = (props) => {
 			<div className="home-page">
 				<h1 className="home-header">Welcome to the Library</h1>
 				<h2 className="recent-favorites">Recent Additions</h2>
-				<BookCards />
-				<h2 className="recent-favorites">Search the Library</h2>
+        <BookCards />
+
+        <div className="hidden-container">
+	      			<h2 className="join-header-visible">{message}</h2>
+			    	  <Link className={user ? "sign-up-redirect-hidden" : "sign-up-redirect-visible"} to='/sign-up'>
+			     		<Button className='join-button' variant='outlined'>Join us!</Button>
+			    	  </Link>
+        </div>
+        
+        <div className='spotlight-search'>
+        <div className='book-spotlight'>
+        <RandomBook />
+        </div>
+
+        <div className='library-search'>
+        <h5 className='search-addon'>not what you're looking for?</h5>
+				<h3 className="recent-favorites">Search the Library</h3>
 				<div className="search-items">
 					<TextField id="outlined-search" 
 						label="Search Books" 
@@ -42,14 +57,11 @@ const Home = (props) => {
 						<Button className='search-button' variant='outlined'>Search</Button>
 					</Link>
 				</div>
-      			<div className="hidden-container">
-	      			<h2 className="join-header-visible">{message}</h2>
-			    	<Link className={user ? "sign-up-redirect-hidden" : "sign-up-redirect-visible"} to='/sign-up'>
-			     		<Button className='join-button' variant='outlined'>Join us!</Button>
-			    	</Link>
         </div>
+        </div>
+
         <BookReviews />
-		        <RandomBook />
+		        
 			</div>
 		</Layout>
 	)
