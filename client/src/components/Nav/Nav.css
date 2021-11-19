@@ -67,6 +67,12 @@ a {
     color: black;
 }
 
+/* 
+Media Query 
+for 
+tablet screens 
+*/
+
 @media (max-width: 900px){
   /* .links{
 flex-direction: column;
@@ -87,8 +93,13 @@ max-width: 50
   }
 }
 
+/* 
+Media Query 
+for 
+medium phone screens 
+*/
 
-@media (max-width: 750px) {
+@media (max-width: 775px) {
     .logo {
         max-width: 50%;
     }
@@ -101,5 +112,27 @@ max-width: 50
     }
     .link {
         padding: 3px;
+    }
+    .link-welcome {
+        display: flex;
+    }
+    .nav {
+        padding: 5%;
+    }
+}
+
+/* 
+Media Query 
+for 
+small phone screens 
+*/
+
+@media (max-width: 450px) {
+    .nav {
+        padding-bottom: 15%;
+    }
+    .logo {
+        display: flex;
+       justify-content: flex-end;
     }
 }
