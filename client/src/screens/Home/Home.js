@@ -33,7 +33,7 @@ const Home = (props) => {
 
         <div className="hidden-container">
 	      			<h2 className="join-header-visible">{message}</h2>
-			    	  <Link className="sign-up-redirect-visible" to={user ? "/books" : "/sign-up-"}>
+			    	  <Link className="sign-up-redirect-visible" to={user ? "/books" : "/sign-up"}>
 			     		<Button className='join-button' variant='outlined'>{buttonText}</Button>
 			    	  </Link>
         </div>

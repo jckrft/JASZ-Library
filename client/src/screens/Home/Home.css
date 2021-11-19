@@ -1,3 +1,5 @@
+
+   
 h1 {
 	font-family: 'IM Fell English', serif;
 	background-size: cover;
@@ -119,10 +121,58 @@ input {
 }
 
 
-@media (max-width: 750px) {
-.home-header{
-  padding:20%;
+
+@media (max-width: 1050px) {
+
+	.layout-children {
+		display: inline;
+	}
+
+	.book-reviews {
+		flex-wrap: wrap;
+	}
+
+	.staff-picks {
+		text-align: center;
+		margin-left: 3%;
+		font-size: 300%;
+	}
+
+	.book-spotlight {
+		font-size: 175%;
+		margin-top: 7%;
+		margin-left: 5%;
+	}
+
+	.random-cards {
+		padding-left: 10%;
+	}
+
+	.book-0 {
+		text-align: left;
+	}
+
+	.spotlight-search {
+		display: inline;
+	}
+
+	.library-search {
+		padding: 0;
+		margin-bottom: 5%;
+	}
+
+	.search-addon {
+		padding-top: 0;
+		font-size: 150%;
+	}
+
 }
+
+
+@media (max-width: 750px) {
+	.home-header{
+	  padding:20%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -140,6 +190,7 @@ input {
 
   .library-search {
     padding: 0px;
+    margin-bottom: 20px;
   }
 
   .search-addon {
@@ -148,5 +199,32 @@ input {
 
   .random-cards-container {
     min-height: 400px;
-}
+	}
+
+	.layout-children {
+		display: inline;
+	}
+
+	.book-spotlight {
+		margin: auto 0;
+	}
+
+	.search-addon {
+		font-size: 110%;
+	}
+
+	.staff-picks {
+		text-align: center;
+		margin: auto 0;
+		font-size: 150%;
+	}
+
+	.hidden-container {
+		margin-bottom: 25%;
+	}
+
+	.recent-favorites {
+		margin-top: 10%;
+	}
+
 }

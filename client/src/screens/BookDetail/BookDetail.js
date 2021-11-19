@@ -30,16 +30,8 @@ const BookDetail = (props) => {
         <div className="detail">
           <div className="title">{book.title}</div>
           <div className="author">By {book.author}</div>
-          <div className="genre">Genre:
-            <br /> 
-            <br />
-            {book.genre}
-          </div>
-          <div className="description">Summary:
-            <br />
-            <br />
-            {book.description}
-          </div>
+          <div className="genre">Genre: {book.genre}</div>
+          <div className="description">{book.description}</div>
           <div className="button-container">
             
             <Link to={`/books/${book._id}/edit`} className="edit-button">

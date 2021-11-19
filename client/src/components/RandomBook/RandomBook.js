@@ -29,13 +29,13 @@ const RandomBook = () => {
 	      title={book ? `${book.title}` : ""}
 	     
 	    />
-		<p className={`book-${index}`}>{book ? `${book.title}` : ""}</p>
+		{/* <p className={`book-${index}`}>{book ? `${book.title}` : ""}</p> */}
      </div>
   ))
 
 	return (
 		<div className='random-books'>
-			<h2 className="staff-picks">Book Spotlight</h2>
+			<h2 className="book-spotlight">Book Spotlight</h2>
     		{randomBooks ? <div className='random-cards-container'>{randomCards}</div> : ""}
     	</div>
 	)
