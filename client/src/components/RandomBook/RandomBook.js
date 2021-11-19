@@ -29,7 +29,7 @@ const RandomBook = () => {
 	      title={book ? `${book.title}` : ""}
 	     
 	    />
-		<p className={`book-${index}`}>{book ? `${book.title}` : ""}</p>
+		{/* <p className={`book-${index}`}>{book ? `${book.title}` : ""}</p> */}
      </div>
   ))
 
