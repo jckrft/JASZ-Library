@@ -1,13 +1,13 @@
 footer {
-  background-color: black;
+  color: #E3DFDF;
   position: absolute;
   bottom: 0px;
   display: block;
   width: 100vw;
-  padding: 12px;
+  padding: 5px;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+ margin-top: 50px;
 }
 
 .external-link {
