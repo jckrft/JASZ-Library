@@ -28,3 +28,14 @@
 p {
 	font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+  .random-books {
+    padding: 0px;
+  }
+
+  .random-cards {
+    justify-content: center;
+    padding: 0px;
+  }
+}
