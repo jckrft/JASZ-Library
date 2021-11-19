@@ -4,7 +4,6 @@ import { getBook } from "../../services/books.js";
 import  Layout  from "../../components/Layout/Layout.js";
 import { Link, useParams } from "react-router-dom";
 import EditIcon from '@mui/icons-material/Edit';
-// Netlify comment
 
 const BookDetail = (props) => {
   const [book, setBook] = useState(null);
@@ -30,9 +29,17 @@ const BookDetail = (props) => {
         <img className="book-detail-img" src={book.imgURL} alt={book.title} />
         <div className="detail">
           <div className="title">{book.title}</div>
-          <div className="author">{book.author}</div>
-          <div className="genre">{book.genre}</div>
-          <div className="description">{book.description}</div>
+          <div className="author">By {book.author}</div>
+          <div className="genre">Genre:
+            <br /> 
+            <br />
+            {book.genre}
+          </div>
+          <div className="description">Summary:
+            <br />
+            <br />
+            {book.description}
+          </div>
           <div className="button-container">
             
             <Link to={`/books/${book._id}/edit`} className="edit-button">

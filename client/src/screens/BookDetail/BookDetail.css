@@ -1,12 +1,72 @@
-/* comment */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+.description {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  text-align: left;
+}
 
 .book-detail{
   display: flex;
   justify-content: center;
+  margin: 10px
 }
 
-.book-detail-image {
-display:flex;
-justify-content: flex-start;
+.book-detail-img {
+  justify-content: flex-start;
+  width: 30%;
+  height: 50%;
+  max-width: 450px;
+  max-height:600px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
+.detail {
+  margin: 20px;
+  padding: 20px;
+}
+
+.title {
+  font-size: xx-large;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 5%;
+  font-size: large;
+  font-weight:bolder ;
+  font-style: italic;
+}
+
+.author {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 5%;
+}
+
+.genre {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 5%;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.edit-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 675px) {
+  .book-detail {
+    flex-direction: column;
+  }
+
+  .book-detail-img{
+    display:flex;
+    height:40%;
+    width:60%;
+  }
 }

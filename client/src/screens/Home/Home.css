@@ -1,8 +1,152 @@
 h1 {
 	font-family: 'IM Fell English', serif;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: whitesmoke;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
 	font-size: 700%;
 	margin: 0 auto;
-	padding: 10%;
+	padding: 2%;
+}
+
+.home-header {
+	font-family: 'IM Fell English', serif;
+	background-image: url(https://www.dramabookshop.com/wp-content/uploads/2020/05/DMBK-Interior-1-062419-ATK.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: whitesmoke;
+	font-size: 7vw;
+	margin: 0 auto;
+	padding: 15%;
+}
+
+.hidden-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.recent-favorites {
+	display: block;
+	font-family: 'IM Fell English', serif;
+	font-size: 300%;
+}
+
+.join-header-visible {
+	display: flex;
+	font-family: 'IM Fell English', serif;
+	font-size: 300%;
+}
+
+.join-header-hidden {
+	display: flex;
+	font-family: 'IM Fell English', serif;
+	font-size: 300%;
+	visibility: collapse;
+}
+
+.join-button {
+  margin-bottom: 30%;
+  color: primary;
+  width: 10%;
+}
+
+.cards {
+	margin-bottom: 5%;
+}
+
+.random-books {
+	min-height: 500px;
+}
+
+.random-cards-container {
+	min-height: 500px;
+}
+
+.sign-up-redirect-visible {
+	display: flex;
+	width: 200%;
+	justify-content: center;
+}
+
+.sign-up-redirect-hidden {
+	display: flex;
+	visibility: collapse;
+	padding-bottom: 0;
+}
+
+input {
+	margin-right: 10%;
+}
+
+.spotlight-search {
+  display: flex;
+  justify-content: center;
+}
+
+.library-search {
+  padding-left: 100px;
+}
+
+.search-addon {
+  padding-top: 100px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.search-items {
+	display: flex;
+	justify-content: center;
+}
+
+.search-button {
+  color: primary;
+  width: 100%;
+}
+
+.search-link {
+  color: primary;
+  margin-left: 5%;
+}
+
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+	height: 100%;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+	height: 100%;
+}
+
+
+@media (max-width: 750px) {
+.home-header{
+  padding:20%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .recent-favorites {
+    font-size: 150%;
+  }
+
+  /* .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+    min-width: 200px;
+  } */
+
+  .spotlight-search {
+    display: block;
+  }
+
+  .library-search {
+    padding: 0px;
+  }
+
+  .search-addon {
+    padding: 0px;
+  }
+
+  .random-cards-container {
+    min-height: 400px;
+}
 }

@@ -1,16 +1,27 @@
 footer {
-  /* background-color: black; */
   color: #E3DFDF;
-  position: relative;
+  position: absolute;
   bottom: 0px;
   display: block;
   width: 100vw;
   padding: 5px;
   justify-content: center;
   align-items: center;
-
+ margin-top: 50px;
 }
 
 .external-link {
   padding-right: 20px;
+}
+
+/* 
+Media Query 
+for 
+medium phone screens 
+*/
+
+@media (max-width: 775px) {
+    footer {
+      width: 100%;
+    }
 }

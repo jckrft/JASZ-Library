@@ -71,7 +71,8 @@ const SignUp = (props) => {
 	    <Box>
 	      <h3>Sign Up</h3>
 	      <form className="sign-up-form" onSubmit={onSignUp}>
-	        <TextField
+            <TextField
+            style={{ margin: '10px 0px 0px 0px' }}
 	          required
 	          label="username"
 	          type='text'
@@ -80,7 +81,8 @@ const SignUp = (props) => {
 	          placeholder='Enter username'
 	          onChange={handleChange}
 	        />
-	        <TextField
+            <TextField
+            style ={{margin: '10px 0px 0px 0px'}}
 	          required
 	          label="email"
 	          type='text'
@@ -89,7 +91,8 @@ const SignUp = (props) => {
 	          placeholder='Enter email'
 	          onChange={handleChange}
 	        />
-	        <TextField
+            <TextField
+            style ={{margin: '10px 0px 0px 0px'}}
 	          required
 	          label="password"
 	          name='password'
@@ -98,7 +101,8 @@ const SignUp = (props) => {
 	          placeholder='Password'
 	          onChange={handleChange}
 	        />
-	        <TextField
+            <TextField
+            style ={{margin: '10px 0px 10px 0px'}}
 	          required
 	          label="confirm password"
 	          name='passwordConfirmation'

@@ -1,1 +1,6 @@
-/* comment */
+.cards{
+  text-align: center;
+  overflow:auto;
+  white-space: nowrap;
+  height: 375px;
+}

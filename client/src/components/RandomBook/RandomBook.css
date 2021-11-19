@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+.random-books {
+	display: flex;
+	flex-direction: column;
+	justify-content:left;
+  padding-right: 100px;
+}
+
+.random-cards-container {
+	display: flex;
+	justify-content: center;
+}
+
+.random-cards {
+	display: flex;
+	flex-direction: column;
+  padding: 0px 0px 0px 100px;
+}
+
+.staff-picks {
+	display: block;
+  text-align: left;
+	font-family: 'IM Fell English', serif;
+	font-size: 200%;
+}
+
+p {
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .random-books {
+    padding: 0px;
+  }
+
+  .random-cards {
+    justify-content: center;
+    padding: 0px;
+  }
+}

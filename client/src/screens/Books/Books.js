@@ -1,7 +1,8 @@
 import Book from '../../components/Book/Book';
 import Layout from '../../components/Layout/Layout';
 import Sort from '../../components/Sort/Sort';
-import { AZ, ZA } from '../../utils/sort';
+import Search from '../../components/Search/Search';
+import { AZTitle, ZATitle, AZAuthor, ZAAuthor } from '../../utils/sort';
 import './Books.css';
 
 import { useEffect, useState } from 'react';
@@ -28,10 +29,16 @@ const Books = (props) => {
     }
     switch (type) {
       case 'title-ascending':
-        setSearchResult(AZ(searchResult))
+        setSearchResult(AZTitle(searchResult))
         break
       case 'title-descending':
-        setSearchResult(ZA(searchResult))
+        setSearchResult(ZATitle(searchResult))
+        break
+        case 'author-ascending':
+        setSearchResult(AZAuthor(searchResult))
+        break
+      case 'author-descending':
+        setSearchResult(ZAAuthor(searchResult))
         break
       default:
         break
@@ -43,6 +50,14 @@ const Books = (props) => {
     setApplySort(false)
   }
 
+  const handleSearch = (ev) => {
+    const bookResults = books.filter((book) => 
+      book.title.toLowerCase().includes(ev.target.value.toLowerCase())
+    )
+    setSearchResult(bookResults)
+    setApplySort(true)
+  }
+
   if (!books) return <h1>loading...</h1>
 
   const handleSubmit = (ev) => ev.preventDefault()
@@ -50,7 +65,10 @@ const Books = (props) => {
   return (
     <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
       <h1 className='books-header'>Books</h1>
-      <Sort onSubmit={handleSubmit} handleSort={handleSort}/>
+      <div className="search-and-sort-container">
+        <Search onSubmit={handleSubmit} handleSearch={handleSearch}/>
+        <Sort onSubmit={handleSubmit} handleSort={handleSort}/>
+      </div>
       <div className='books'>
         {searchResult.map((book, index) => {
           return (

@@ -20,7 +20,8 @@ nav {
 .logo {
     font-family: 'IM Fell English', serif;
     color: whitesmoke;
-    text-align: center;
+    text-align: left;
+    margin-left: 2%;
     font-size: 34px;
     letter-spacing: -3px;
     flex: 1;
@@ -40,7 +41,7 @@ nav {
     justify-content: flex-end;
     align-items: flex-end;
     position: absolute;
-    top: 0%;
+    top: 20%;
     right: 8%;
 }
 
@@ -66,21 +67,72 @@ a {
     color: black;
 }
 
-@media (max-width: 500px) {
-    nav {
-        width: 98%;
-    }
+/* 
+Media Query 
+for 
+tablet screens 
+*/
+
+@media (max-width: 900px){
+  /* .links{
+flex-direction: column;
+font-size: 18px;
+width: 100%;
+max-width: 50
+  } */
+
+  /* .link {
+    padding: 3px;
+}
+
+.logo {
+  max-width: 50%; */
+
+  .links{
+    font-size:18px;
+  }
+}
+
+/* 
+Media Query 
+for 
+medium phone screens 
+*/
+
+@media (max-width: 775px) {
     .logo {
         max-width: 50%;
     }
     .links {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 50vw;
+    flex-direction: column;
+    width: 100%;
+    max-width: 50;
+    top: 5%;
+    font-size: 18px;
     }
     .link {
         padding: 3px;
+    }
+    .link-welcome {
+        display: flex;
+    }
+    .nav {
+        padding: 5%;
+    }
+}
+
+/* 
+Media Query 
+for 
+small phone screens 
+*/
+
+@media (max-width: 450px) {
+    .nav {
+        padding-bottom: 15%;
+    }
+    .logo {
+        display: flex;
+       justify-content: flex-end;
     }
 }

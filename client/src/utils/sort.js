@@ -9,5 +9,7 @@ const compareKey = key =>
     return 0
   }
 
-export const AZ = arr => arr.sort(compareKey('title'))
-export const ZA = arr => arr.sort(compareKey('title')).reverse()
+export const AZTitle = arr => arr.sort(compareKey('title'))
+export const ZATitle = arr => arr.sort(compareKey('title')).reverse()
+export const AZAuthor = arr => arr.sort(compareKey('author'))
+export const ZAAuthor = arr => arr.sort(compareKey('author')).reverse()

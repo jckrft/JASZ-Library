@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
 
 .books-header {
   font-family: 'IM Fell English', serif;
@@ -13,3 +15,61 @@ flex-wrap: wrap;
 justify-content:center;
 }
 
+
+.search-and-sort-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  margin-right: 5%;
+}
+
+label {
+  margin-right: 5%;
+  font-family: 'Be Vietnam Pro', sans-serif;;
+}
+
+.sort-container {
+  width: 25%;
+}
+
+
+/* 
+Media Query 
+for 
+small tablet screens 
+*/
+
+@media (max-width: 775px) {
+  .layout-children {
+    width: 110%;
+    background-color: #E3DFDF;
+  }
+
+  .books {
+    margin-right: 7%;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: flex-end;
+  }
+
+}
+
+/* 
+Media Query 
+for 
+small phone screens 
+*/
+
+@media (max-width: 775px) {
+  .books-header {
+    font-size: 400%;
+  }
+
+  .search-and-sort-container {
+    width: 80%;
+  }
+}
