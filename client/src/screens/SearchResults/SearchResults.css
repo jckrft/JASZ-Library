@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
 .search-results {
 	display: flex;
 	flex-direction: row;
@@ -7,12 +9,12 @@
 }
 
 .return-home {
-	margin-top: 55%;
+	margin-top: 60%;
 }
 
 .no-results {
 	font-size: 300%;
-	font-family: 'Fira Code', monospace;
+	font-family: 'Be Vietnam Pro', sans-serif;
 	margin-bottom: 5%;
 }
 

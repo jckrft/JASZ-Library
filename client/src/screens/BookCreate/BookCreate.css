@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+form {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
 .book-create-container {
   display: flex;
   flex-direction: row;
@@ -27,10 +34,16 @@
 
 .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
     margin: 100px;
+    font-family: 'Be Vietnam Pro', sans-serif;
   }
 
 .submit-button {
   color:black;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
