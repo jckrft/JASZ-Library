@@ -39,6 +39,7 @@ const BookCreate = (props) => {
 
 	return (
     <Layout user={props.user ? (props.user.username ? props.user.username : props.user) : ""}>
+      <h1>Add a Book</h1>
       <div className='book-create-container'>
       <Box>
       <form className="book-create" onSubmit={handleSubmit}>

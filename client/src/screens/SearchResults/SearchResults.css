@@ -7,7 +7,7 @@
 }
 
 .return-home {
-	margin-top: 17%;
+	margin-top: 55%;
 }
 
 .no-results {
@@ -28,7 +28,7 @@
   position: relative;
   perspective: 70rem;
   display: flex;
-  margin-right: 17%;
+  margin-right: 70%;
 }
 .cover {
   background-color: #36354e;

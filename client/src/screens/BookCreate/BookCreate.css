@@ -7,6 +7,12 @@
   margin-bottom: 25%;
 }
 
+.book-create-header {
+  font-family: 'IM Fell English', serif;
+  display:flex;
+  justify-content: flex-start;
+}
+
 .book-create {
   display: flex;
   flex-direction: column;
@@ -32,4 +38,5 @@
     width: 95%;
   }
 }
+
 
