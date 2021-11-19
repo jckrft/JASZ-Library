@@ -15,7 +15,7 @@ const RandomBook = () => {
 	useEffect(() => {
 		const fetchBooks = async () => {
 			const books = await getBooks()
-			books ? setRandomBooks([getRandom(books), getRandom(books)]) : setRandomBooks("loading")
+			books ? setRandomBooks([getRandom(books)]) : setRandomBooks("loading")
 		}
 		fetchBooks();		
 	}, [])

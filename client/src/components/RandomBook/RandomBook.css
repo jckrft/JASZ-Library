@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
 .random-books {
 	display: flex;
 	flex-direction: column;
@@ -20,3 +22,6 @@
 	font-size: 300%;
 }
 
+p {
+	font-family: 'Be Vietnam Pro', sans-serif;
+}

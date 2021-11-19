@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 
 .description {
   display: flex;
   justify-content: space-evenly;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Be Vietnam Pro', sans-serif;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -33,18 +33,18 @@
 
 .title{
   font-size: xx-large;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Be Vietnam Pro', sans-serif;
   margin-bottom: 10px;
   font-size: large;
   font-weight:bolder ;
 }
 
 .author{
-  font-family: 'Fira Code', monospace;
+  font-family: 'Be Vietnam Pro', sans-serif;
   margin-bottom: 5px;
 }
 
 .genre{
-  font-family: 'Fira Code', monospace;
+  font-family: 'Be Vietnam Pro', sans-serif;
   margin-bottom: 10px;
 }
