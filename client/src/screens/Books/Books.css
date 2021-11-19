@@ -33,3 +33,43 @@ label {
 .sort-container {
   width: 25%;
 }
+
+
+/* 
+Media Query 
+for 
+small tablet screens 
+*/
+
+@media (max-width: 775px) {
+  .layout-children {
+    width: 110%;
+    background-color: #E3DFDF;
+  }
+
+  .books {
+    margin-right: 7%;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: flex-end;
+  }
+
+}
+
+/* 
+Media Query 
+for 
+small phone screens 
+*/
+
+@media (max-width: 775px) {
+  .books-header {
+    font-size: 400%;
+  }
+
+  .search-and-sort-container {
+    width: 80%;
+  }
+}
