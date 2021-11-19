@@ -16,20 +16,20 @@
 }
 
 .book-detail-img {
-  display: flex;
   justify-content: flex-start;
   width: 30%;
   height: 50%;
-  max-width: 340;
-  max-height: 500;
+  max-width: 450px;
+  max-height:600px;
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .detail {
   margin: 20px;
   padding: 20px;
-  max-width: 500px;
-  max-height:700px;
 }
 
 .title {
@@ -38,6 +38,7 @@
   margin-bottom: 5%;
   font-size: large;
   font-weight:bolder ;
+  font-style: italic;
 }
 
 .author {
@@ -56,4 +57,16 @@
   display: flex;
   justify-content: center;
   margin-left: 5%;
+}
+
+@media only screen and (max-width: 675px) {
+  .book-detail {
+    flex-direction: column;
+  }
+
+  .book-detail-img{
+    display:flex;
+    height:40%;
+    width:60%;
+  }
 }
