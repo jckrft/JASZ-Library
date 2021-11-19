@@ -6,11 +6,12 @@ const Search = (props) => {
         <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
             <TextField
                 className="search-input"
+                id="outlined-search"
                 value={props.value}
                 onChange={(e) => props.handleSearch(e)}
                 name="Search"
                 placeholder="Search"
-                type="text"
+                type="search"
                 autoFocus
             />
         </form>

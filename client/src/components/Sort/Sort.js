@@ -4,7 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
 
 const Sort = (props) => {
-  const [sortValue, setSortValue] = useState("Sort By")
+  const [sortValue, setSortValue] = useState("title-ascending")
 
   const handleSort = (ev) => {
     props.handleSort(ev.target.value)

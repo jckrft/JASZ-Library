@@ -23,6 +23,8 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 
 .recent-favorites {
@@ -46,7 +48,7 @@ h1 {
 
 .join-button {
   margin-bottom: 30%;
-  color: black;
+  color: primary;
   width: 10%;
 }
 
@@ -66,7 +68,6 @@ h1 {
 	display: flex;
 	width: 200%;
 	justify-content: center;
-	padding-bottom: 10%;
 }
 
 .sign-up-redirect-hidden {
@@ -85,15 +86,19 @@ input {
 }
 
 .search-button {
-  color: black;
+  color: primary;
   width: 100%;
 }
 
 .search-link {
-  color: black;
+  color: primary;
   margin-left: 5%;
 }
 
 .css-sghohy-MuiButtonBase-root-MuiButton-root {
+	height: 100%;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
 	height: 100%;
 }
