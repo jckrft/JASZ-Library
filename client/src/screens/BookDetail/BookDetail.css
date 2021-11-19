@@ -4,8 +4,9 @@
   display: flex;
   justify-content: space-evenly;
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  text-align: left;
 }
 
 .book-detail{
@@ -31,20 +32,28 @@
   max-height:700px;
 }
 
-.title{
+.title {
   font-size: xx-large;
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
   font-size: large;
   font-weight:bolder ;
 }
 
-.author{
+.author {
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 5%;
 }
 
-.genre{
+.genre {
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.edit-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
 }
