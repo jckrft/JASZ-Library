@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=IM+Fell+English&display=swap');
 
 .random-books {
 	display: flex;
@@ -18,17 +19,16 @@
   padding: 0px 0px 0px 100px;
 }
 
+.book-spotlight {
+  font-family: 'IM Fell English', serif;
+  font-size: 30px;
+}
+
 .staff-picks {
 	display: block;
   text-align: left;
 	font-family: 'IM Fell English', serif;
-	font-size: 200%;
-}
-
-.book-spotlight {
-  display: block;
-  font-family: 'IM Fell English', serif;
-  margin-left: 10%;
+	/* font-size: 200%; */
 }
 
 p {
