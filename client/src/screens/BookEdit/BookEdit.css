@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
 .book-edit {
 	display: flex;
 	flex-direction: row;
@@ -19,6 +21,7 @@
 	flex-direction: column;
 	width: 50%;
 	margin: 0 auto;
+	font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .edit-button-container {
@@ -28,23 +31,25 @@
 }
 
 .save-button {
-	width: 10%;
+	width: 15%;
 	font-size: 125%;
 	margin-right: 2%;
+		font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .delete-button {
 	width: 10%;
 }
 
-@media only screen and (max-width: 675px) {
-  .book-edit {
-    display:flex;
-    flex-direction: column;
-  }
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
 
-  .edit-book-image{
-    height:40%;
-    width:60%;
-  }
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.css-66dh3a-MuiInputBase-input-MuiInput-input {
+	font-family: 'Be Vietnam Pro', sans-serif;
+	color: red;
 }

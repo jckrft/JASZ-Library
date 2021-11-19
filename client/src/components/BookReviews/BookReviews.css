@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=IM+Fell+English&display=swap');
+
 .book-reviews {
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.372);
 }
 
+.staff-picks {
+  display: block;
+  font-family: 'IM Fell English', serif;
+}
+
 .book-1 {
   display: flex;
-
   padding: 30px 150px 30px 30px
 }
 
@@ -15,9 +21,20 @@
   padding: 30px 
 }
 
+.book-1 img {
+  width: 200px;
+  height: 300px;
+}
+
+.book-2 img {
+  width: 200px;
+  height: 300px;
+}
+
 .book-1-p {
   width: 190px;
   height: 252px;
+  font-size: small;
   border: #CED4DA solid 2px;
   padding: 50px 15px 20px 15px;
   margin: 50px 0px 0px 0px;
@@ -27,6 +44,7 @@
 .book-2-p {
   width: 200px;
   height: 300px;
+  font-size: small;
   border: #CED4DA solid 2px;
   padding: 20px 15px 0px 15px;
   margin: 50px 0px 0px 0px;
@@ -45,5 +63,38 @@
   }
   .book-2 {
     width: 100%;
+  }
+
+  .book-1 img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .book-2 img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .book-1-p {
+      width: 180px;
+      height: 220px;
+      font-size: small;
+      border: #CED4DA solid 2px;
+      padding: 10px 15px 20px 15px;
+      margin: 50px 0px 0px 0px;
+
+  }
+  
+  .book-2-p {
+    width: 180px;
+    height: 330px;
+    font-size: small;
+    border: #CED4DA solid 2px;
+    padding: 10px 15px 0px 15px;
+    margin: 50px 0px 0px 0px;
+  }
+
+  .staff-picks {
+    padding-top: 30px;
   }
 }

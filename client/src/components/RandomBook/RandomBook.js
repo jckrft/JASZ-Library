@@ -15,7 +15,7 @@ const RandomBook = () => {
 	useEffect(() => {
 		const fetchBooks = async () => {
 			const books = await getBooks()
-			books ? setRandomBooks([getRandom(books), getRandom(books)]) : setRandomBooks("loading")
+			books ? setRandomBooks([getRandom(books)]) : setRandomBooks("loading")
 		}
 		fetchBooks();		
 	}, [])
@@ -35,7 +35,7 @@ const RandomBook = () => {
 
 	return (
 		<div className='random-books'>
-			<h2 className="staff-picks">Staff Picks</h2>
+			<h2 className="staff-picks">Book Spotlight</h2>
     		{randomBooks ? <div className='random-cards-container'>{randomCards}</div> : ""}
     	</div>
 	)

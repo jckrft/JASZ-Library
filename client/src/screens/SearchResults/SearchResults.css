@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
 .search-results {
 	display: flex;
 	flex-direction: row;
@@ -7,12 +9,12 @@
 }
 
 .return-home {
-	margin-top: 55%;
+	margin-top: 60%;
 }
 
 .no-results {
 	font-size: 300%;
-	font-family: 'Fira Code', monospace;
+	font-family: 'Be Vietnam Pro', sans-serif;
 	margin-bottom: 5%;
 }
 
@@ -115,4 +117,60 @@
   50% { z-index: 999 }
   100% {  transform: rotateY(30deg);
     z-index: 999;}
+}
+
+/* 
+Media Query 
+for 
+medium phone screens 
+*/
+
+@media (max-width: 650px) {
+	.search-header {
+		font-size: 400%;
+	}
+
+	.no-results {
+		font-size: 200%;
+	}
+
+	.book-animation {
+	  position: relative;
+	  perspective: 70rem;
+	  display: flex;
+	  margin-right: 115%;
+	}
+
+	.return-home {
+		margin-top: 100%;
+	}
+
+}
+
+/* 
+Media Query 
+for 
+small phone screens 
+*/
+
+@media (max-width: 400px) {
+	.search-header {
+		font-size: 300%;
+	}
+
+	.no-results {
+		font-size: 150%;
+	}
+
+	.book-animation {
+	  position: relative;
+	  perspective: 70rem;
+	  display: flex;
+	  margin-right: 150%;
+	}
+
+	.return-home {
+		margin-top: 120%;
+	}
+
 }

@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 
 .description {
   display: flex;
   justify-content: space-evenly;
-  font-family: 'Fira Code', monospace;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  max-width: 500px;
-  max-height:700px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  text-align: left;
 }
 
 .book-detail{
@@ -33,25 +32,31 @@
   padding: 20px;
 }
 
-.title{
+.title {
   font-size: xx-large;
-  font-family: 'Fira Code', monospace;
-  margin-bottom: 10px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 5%;
   font-size: large;
   font-weight:bolder ;
   font-style: italic;
 }
 
-.author{
-  font-family: 'Fira Code', monospace;
-  margin-bottom: 5px;
-  font-weight: bold;
+.author {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 5%;
 }
 
-.genre{
-  font-family: 'Fira Code', monospace;
-  margin-bottom: 10px;
-  font-weight: bold;
+.genre {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 5%;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.edit-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
 }
 
 @media only screen and (max-width: 675px) {
