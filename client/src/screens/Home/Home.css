@@ -14,9 +14,9 @@ h1 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: whitesmoke;
-	font-size: 700%;
+	font-size: 7vw;
 	margin: 0 auto;
-	padding: 10%;
+	padding: 15%;
 }
 
 .hidden-container {
@@ -115,6 +115,13 @@ input {
 
 .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
 	height: 100%;
+}
+
+
+@media (max-width: 750px) {
+.home-header{
+  padding:20%;
+}
 }
 
 @media only screen and (max-width: 600px) {

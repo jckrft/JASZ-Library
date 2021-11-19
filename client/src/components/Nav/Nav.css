@@ -106,8 +106,8 @@ medium phone screens
     .links {
     flex-direction: column;
     width: 100%;
-    max-width: 50
-;
+    max-width: 50;
+    top: 5%;
     font-size: 18px;
     }
     .link {
