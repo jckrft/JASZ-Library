@@ -4,15 +4,19 @@
   display: flex;
   justify-content: space-evenly;
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin-bottom: 5%;
-  margin-left: 15%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 500px;
+  max-height:700px;
   text-align: left;
 }
 
 .book-detail{
   display: flex;
   justify-content: center;
-  margin: 10px
+  margin: 10px;
+  align-items: center;
+
 }
 
 .book-detail-img {
@@ -33,40 +37,48 @@
 }
 
 .title {
-  font-size: xx-large;
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
   font-size: large;
   font-weight:bolder ;
   font-style: italic;
+  text-align: left;
 }
 
 .author {
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .genre {
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
+  font-weight: bold;
   text-align: left;
-  margin-left: 15%;
 }
 
 .edit-button {
   display: flex;
   justify-content: center;
-  margin-left: 5%;
+  color: black;
+  margin-top: 10px;
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 775px) {
   .book-detail {
     flex-direction: column;
+    margin-left: 0px;
   }
 
   .book-detail-img{
     display:flex;
     height:40%;
     width:60%;
+  }
+
+  .description{
+    margin: 0px;
   }
 }

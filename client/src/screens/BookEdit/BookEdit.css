@@ -53,3 +53,15 @@
 	font-family: 'Be Vietnam Pro', sans-serif;
 	color: red;
 }
+
+@media only screen and (max-width: 675px) {
+  .book-edit {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .edit-book-image{
+    height:40%;
+    width:60%;
+  }
+}
