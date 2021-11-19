@@ -16,7 +16,8 @@
 .staff-picks {
   display: block;
   font-family: 'IM Fell English', serif;
-  margin-left: 10%;
+  margin: 20px;
+  font-size: 300%;
 }
 
 .book-1 {
@@ -42,7 +43,7 @@
 .book-1-p {
   width: 190px;
   height: 252px;
-  font-size: small;
+  font-size: large;
   border: #CED4DA solid 2px;
   padding: 50px 15px 20px 15px;
   margin: 50px 0px 0px 0px;
@@ -52,7 +53,7 @@
 .book-2-p {
   width: 200px;
   height: 300px;
-  font-size: small;
+  font-size: large;
   border: #CED4DA solid 2px;
   padding: 20px 15px 0px 15px;
   margin: 50px 0px 0px 0px;
