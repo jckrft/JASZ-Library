@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 
-
 .books-header {
   font-family: 'IM Fell English', serif;
   display:flex;
@@ -9,12 +8,11 @@
 }
 
 .books {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content:center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
 }
-
 
 .search-and-sort-container {
   display: flex;

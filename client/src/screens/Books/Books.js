@@ -1,14 +1,14 @@
-import Book from '../../components/Book/Book';
-import Layout from '../../components/Layout/Layout';
-import Sort from '../../components/Sort/Sort';
-import Search from '../../components/Search/Search';
-import { AZTitle, ZATitle, AZAuthor, ZAAuthor } from '../../utils/sort';
-import './Books.css';
-
-import { useEffect, useState } from 'react';
-import { getBooks } from '../../services/books';
+import { useEffect, useState } from 'react'
+import { getBooks } from '../../services/books'
+import { AZTitle, ZATitle, AZAuthor, ZAAuthor } from '../../utils/sort'
+import Book from '../../components/Book/Book'
+import Layout from '../../components/Layout/Layout'
+import Sort from '../../components/Sort/Sort'
+import Search from '../../components/Search/Search'
+import './Books.css'
 
 const Books = (props) => {
+
   const [books, setBooks] = useState(null)
   const [searchResult, setSearchResult] = useState([])
   const [applySort, setApplySort] = useState(false)
@@ -63,9 +63,9 @@ const Books = (props) => {
   const handleSubmit = (ev) => ev.preventDefault()
 
   return (
-    <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
+    <Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ''}>
       <h1 className='books-header'>Books</h1>
-      <div className="search-and-sort-container">
+      <div className='search-and-sort-container'>
         <Search onSubmit={handleSubmit} handleSearch={handleSearch}/>
         <Sort onSubmit={handleSubmit} handleSort={handleSort}/>
       </div>
@@ -83,9 +83,8 @@ const Books = (props) => {
             />
           )
         })}
-			
       </div>
-      </Layout>
+    </Layout>
 	)
 }
 

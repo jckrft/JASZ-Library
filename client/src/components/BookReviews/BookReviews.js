@@ -4,7 +4,7 @@ const BookReviews = () => {
   return (
     <div className='book-reviews-container'>
       <h4 className='staff-picks'>Staff Picks</h4>
-      <div className="book-reviews">
+      <div className='book-reviews'>
         <div className='book-1'>
           <img
             src='http://prodimage.images-bn.com/pimages/9781788289702_p0_v1_s1200x630.jpg'

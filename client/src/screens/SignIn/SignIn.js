@@ -1,11 +1,11 @@
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-import { signIn } from '../../services/users';
-import Layout from '../../components/Layout/Layout';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import './SignIn.css';
+import Box from '@mui/material/Box'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { signIn } from '../../services/users'
+import Layout from '../../components/Layout/Layout'
+import './SignIn.css'
 
 const SignIn = (props) => {
 	const navigate = useNavigate();
@@ -27,14 +27,14 @@ const SignIn = (props) => {
 	}
 
 	const onSignIn = async (ev) => {
-		ev.preventDefault();
-		const { setUser } = props;
+		ev.preventDefault()
+		const { setUser } = props
 		try {
-			const user = await signIn(signInForm);
-			setUser(user);
-			navigate('/');
+			const user = await signIn(signInForm)
+			setUser(user)
+			navigate('/')
 		} catch (error) {
-			console.error(error);
+			console.error(error)
 			setSignInForm({
 				email:'',
 				password:'',
@@ -48,44 +48,50 @@ const SignIn = (props) => {
 		const toggleSignIn = signInForm.isError ? 'ERROR' : ''
 		if(signInForm.isError) {
 			return (
-				<Button variant="contained" color="warning" type="submit" className={toggleSignIn}>{signInForm.errorMsg}</Button>
+				<Button variant='contained' color='warning' type='submit' className={toggleSignIn}>
+					{signInForm.errorMsg}
+				</Button>
 			)
 		}
 		else {
-			return <Button variant="outlined" type="submit">Sign In</Button>
+			return (
+				<Button variant='outlined' type='submit'>
+					Sign In
+				</Button>
+			)
 		}
 	}
 
 	return (
-		<Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ""}>
-			<div className="sign-in-form-container">
-			<Box>
-				<h3>Sign In</h3>
-					<form className="sign-in-form" onSubmit={onSignIn}>
+		<Layout user={ props.user ? (props.user.username ? props.user.username : props.user) : ''}>
+			<div className='sign-in-form-container'>
+				<Box>
+					<h3>Sign In</h3>
+					<form className='sign-in-form' onSubmit={onSignIn}>
 						<TextField
-							label="Email"
-							className="input-email"
-							placeholder="Email Address"
+							label='Email'
+							className='input-email'
+							placeholder='Email Address'
 							value={email}
-							name="email"
+							name='email'
 							required
 							onChange={handleChange}
 						/>
             <TextField
               style ={{margin: '10px 0px 10px 0px'}}
-							label="Password"
-							className="input-password"
-							placeholder="Password"
-							type="password"
+							label='Password'
+							className='input-password'
+							placeholder='Password'
+							type='password'
 							value={password}
-							name="password"
+							name='password'
 							required
 							onChange={handleChange}
 						/>
 						{renderError()}
 					</form>
-					</Box>
-				</div>
+				</Box>
+			</div>
 		</Layout>
 	)
 }

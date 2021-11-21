@@ -1,10 +1,11 @@
+import Select from '@mui/material/Select'
+import MenuItem from '@mui/material/MenuItem'
+import { useState } from 'react'
 import './Sort.css'
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
-import { useState } from 'react';
 
 const Sort = (props) => {
-  const [sortValue, setSortValue] = useState("title-ascending")
+
+  const [sortValue, setSortValue] = useState('title-ascending')
 
   const handleSort = (ev) => {
     props.handleSort(ev.target.value)
@@ -13,11 +14,11 @@ const Sort = (props) => {
 
   return (
     <form className='sort-container' onSubmit={props.handleSubmit}>
-      <label id="label">Sort by: </label>
+      <label id='label'>Sort by: </label>
       <Select className='sort'
-        labelId="label"
+        labelId='label'
         value={sortValue}
-        label="Sort by"
+        label='Sort by'
         onChange={handleSort}
       >
         <MenuItem
