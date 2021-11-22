@@ -1,6 +1,6 @@
-import './Footer.css'
 import { ExternalLink } from 'react-external-link'
-import GitHubIcon from '@mui/icons-material/GitHub';
+import GitHubIcon from '@mui/icons-material/GitHub'
+import './Footer.css'
 
 const Footer = () =>
   <footer>
@@ -13,6 +13,5 @@ const Footer = () =>
     <ExternalLink className='external-link' href='https://github.com/zachpartin'><GitHubIcon />
     </ExternalLink>
   </footer>
-  
 
 export default Footer

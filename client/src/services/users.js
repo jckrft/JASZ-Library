@@ -1,5 +1,5 @@
-import api from './apiConfig'
 import jwtDecode from 'jwt-decode'
+import api from './apiConfig'
 
 export const signUp = async (credentials) => {
   try {

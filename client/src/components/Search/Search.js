@@ -1,17 +1,17 @@
+import TextField from '@mui/material/TextField'
 import './Search.css'
-import TextField from '@mui/material/TextField';
 
 const Search = (props) => {
     return (
-        <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
+        <form className='search-form' onSubmit={(ev) => props.onSubmit(ev)}>
             <TextField
-                className="search-input"
-                id="outlined-search"
+                className='search-input'
+                id='outlined-search'
                 value={props.value}
-                onChange={(e) => props.handleSearch(e)}
-                name="Search"
-                placeholder="Search"
-                type="search"
+                onChange={(ev) => props.handleSearch(ev)}
+                name='Search'
+                placeholder='Search'
+                type='search'
                 autoFocus
             />
         </form>
