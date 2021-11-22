@@ -1,5 +1,7 @@
 # JASZ-Library
 
+[JASZ-Library](https://jasz-library.netlify.app/)
+
 ## Overview
 The JASZ Library is an interactive collection of books that allows anyone to browse the collection. A user can also sign up for an account and log in to add, edit, or delete a book in the collection.
 
@@ -55,6 +57,7 @@ const User = new Schema(
 ## Team Expectations
 
 Link to [Team Expectations Document](https://docs.google.com/document/d/1WMG7CX3tmeAdju4malt2lE7Vz8K2oUcaGM85A9WGWhY/edit)
+Link to [Github Projects Link](https://github.com/jckrft/JASZ-Library/projects/1)
 
 ### Project Schedule
 
@@ -63,7 +66,7 @@ Day | Goal
 11/10 | Create repo, brainstorm idea & get approval
 11/11 | Off day
 11/12 | AM: Finish readme, component hierarchy, figma PM: Start building back-end
-11/13 | Off day
+11/13 | Continue working on back-end
 11/14 | Finish working on back-end
 11/15 | AM: Have back-end finished and deployed, discuss delegating tasks PM: Begin working on individual components
 11/16 | Work on individual front-end components
